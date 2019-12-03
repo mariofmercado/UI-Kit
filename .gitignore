@@ -1,7 +1,7 @@
 node_modules/
 node_modules
 
-doc/
+web/
 
 package-lock.json
 
