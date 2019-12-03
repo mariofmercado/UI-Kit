@@ -1,0 +1,85 @@
+//======================================
+//-- Colores
+//======================================
+
+$white:                      #fff !default;
+$black:                      #000 !default;
+
+//======================================
+//-- Body
+//======================================
+
+$body-bg:                    $white !default;
+$body-color:                 $black !default;
+
+//======================================
+//-- Generales
+//======================================
+
+$border-width:                1px !default;
+$spacer:                      1rem;
+
+//======================================
+//-- Tipografía
+//======================================
+
+$font-family-base:            "Source Sans Pro", sans-serif, Roboto, "Helvetica Neue", Arial !default;
+$font-base-weight-1:          400 !default;
+$font-base-weight-2:          600 !default;
+$font-base-weight-3:          700 !default;
+$font-family-secondary:       "Oswald", sans-serif, Roboto, "Helvetica Neue", Arial !default;
+$font-secondary-weight-1:     400 !default;
+$font-secondary-weight-2:     600 !default;
+$font-secondary-weight-3:     700 !default;
+
+$font-size-base:              1rem !default; //- Tamaño de navegador en 16px
+$font-size-base-mobile:       $font-size-base * .875 !default; //- Con tamaño de navegador en 16px - equivale a 14px
+$font-size-small:                $font-size-base * .875 !default; //- Con tamaño de navegador en 16px - equivale a 14px
+$font-size-extra-small:               $font-size-base * .8125 !default; //- Con tamaño de navegador en 16px - equivale a 13px
+
+$line-height-base:            1.5 !default;
+
+$h1-font-size:                $font-size-base * 2.25  !default; //- Con tamaño de navegador en 16px - equivale a 36px
+$h1-font-size-mobile:         $font-size-base * 2  !default; //- Con tamaño de navegador en 16px - equivale a 32px
+$h2-font-size:                $font-size-base * 2  !default; //- Con tamaño de navegador en 16px - equivale a 32px
+$h2-font-size-mobile:         $font-size-base * 1.5  !default; //- Con tamaño de navegador en 16px - equivale a 24px;
+$h3-font-size:                $font-size-base * 1.5  !default; //- Con tamaño de navegador en 16px - equivale a 24px;
+$h3-font-size-mobile:         $font-size-base * 1.25  !default; //- Con tamaño de navegador en 16px - equivale a 20px;
+$h4-font-size:                $font-size-base * 1.25  !default; //- Con tamaño de navegador en 16px - equivale a 20px;
+$h4-font-size-mobile:         $font-size-base !default;
+$h5-font-size:                $font-size-base * 1.125  !default; //- Con tamaño de navegador en 16px - equivale a 18px;
+$h5-font-size-mobile:         $font-size-base !default;
+$h6-font-size:                $font-size-base * 1.125  !default; //- Con tamaño de navegador en 16px - equivale a 18px;
+$h6-font-size-mobile:         $font-size-base !default;
+
+$headings-margin-bottom:      $spacer / 2 !default;
+$headings-font-family:        null !default;
+$headings-font-style:         null !default;
+$headings-font-weight:        400 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              null !default;
+
+$hr-color:                    inherit !default;
+$hr-height:                   $border-width !default;
+$hr-opacity:                  .25 !default;
+
+$hr-margin-y:                 $spacer !default;
+
+//======================================
+//-- Forms
+//======================================
+
+$label-margin-bottom:         .5rem !default;
+
+//======================================
+//-- Breakpoints
+//======================================
+
+$screen-tablet-landscape:     1024px;
+$screen-tablet-portrait:      768px;
+
+$screen-phone-lg-landscape:   736px;
+$screen-phone-lg-portrait:    414px;
+
+$screen-phone-md-landscape:   667px;
+$screen-phone-md-portrait:    375px;

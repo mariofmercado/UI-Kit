@@ -1,0 +1,15 @@
+mixin example(selectorReplaceText)
+	.DOC-example
+		.DOC-example__preview
+			p.DOC-example__title: b EJEMPLO
+			if block
+				block
+			else
+				p No content provided
+		.DOC-example__code
+			if block
+				pre
+					code.language-html(data-replacetext= selectorReplaceText ? selectorReplaceText :null)
+						block
+			else
+				p No content provided

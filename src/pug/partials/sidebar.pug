@@ -1,0 +1,10 @@
+ul.DOC-nav
+	each section in nav
+		li.DOC-nav__section(class=section.section === idMainSection ? 'DOC-nav__section--active' : '')
+			a(href=section.slug) #{section.title}
+			if section.sections
+				ul
+					each subsection in section.sections
+						li.DOC-nav__section(class=subsection.section === idSection ? 'DOC-nav__section--active' : '')
+							a(href=subsection.slug) #{subsection.title}
+		

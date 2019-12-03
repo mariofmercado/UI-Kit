@@ -1,0 +1,24 @@
+include ../partials/config.pug
+include ../mixins/example.pug
+block vars
+- styles.push('https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css');
+- scripts.push(assets+'js/doc.js');
+- scripts.push('https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.js');
+doctype
+html(lang="es")
+	head
+		include ../partials/head.pug
+	body
+		.DOC-sidebar
+			include ../partials/sidebar.pug
+		.DOC-content
+			#DOC-container.DOC-container
+				h1.DOC-page__title #{page}
+				p.DOC-page__desc #{pageDesc}
+				block content
+		if pageToc
+			#DOC-toc.DOC-toc
+				h6.DOC-toc__title En esta página
+				ul#DOC-toc-nav.DOC-toc__nav
+		include ../partials/js.pug
+			

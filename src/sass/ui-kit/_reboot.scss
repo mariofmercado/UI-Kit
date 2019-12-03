@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+//- body
+
+body {
+	margin: 0;
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: $body-color;
+	background-color: $body-bg;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba($black, 0);
+}
+
+//- hr
+
+hr {
+	margin: $hr-margin-y 0;
+	color: $hr-color; // 1
+	background-color: currentColor;
+	border: 0;
+	opacity: $hr-opacity;
+}
+
+hr:not([size]) {
+	height: $hr-height; // 2
+}
+
+//- Encabezados
+
+%heading {
+	margin-top: 0;
+	margin-bottom: $headings-margin-bottom;
+	font-family: $headings-font-family;
+	font-style: $headings-font-style;
+	font-weight: $headings-font-weight;
+	line-height: $headings-line-height;
+	color: $headings-color;
+}
+
+h1 {
+	@extend %heading;
+	font-size: $h1-font-size;
+}
+
+h2 {
+	@extend %heading;
+	font-size: $h2-font-size;
+}
+
+h3 {
+	@extend %heading;
+	font-size: $h3-font-size;
+}
+
+h4 {
+	@extend %heading;
+	font-size: $h4-font-size;
+}
+
+h5 {
+	@extend %heading;
+	font-size: $h5-font-size;
+}
+
+h6 {
+	@extend %heading;
+	font-size: $h6-font-size;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: $font-size-base;
+}
+
+//- forms
+
+label {
+	display: inline-block;
+	margin-bottom: $label-margin-bottom;
+	font-weight: $font-base-weight-3;
+}
+
+button {
+	border-radius: 0;
+}
+
+button:focus {
+	outline: 1px dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+button,
+input {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+select {
+	word-wrap: normal;
+}
+
+@media (max-width: $screen-phone-lg-landscape){
+
+	h1{
+		font-size: $h1-font-size-mobile;
+	}
+
+	h2{
+		font-size: $h2-font-size-mobile;
+	}
+
+	h3{
+		font-size: $h3-font-size-mobile;
+	}
+
+	h4{
+		font-size: $h4-font-size-mobile;
+	}
+
+	h5{
+		font-size: $h5-font-size-mobile;
+	}
+
+	h6{
+		font-size: $h6-font-size-mobile;
+	}
+
+}

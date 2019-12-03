@@ -1,0 +1,110 @@
+.DOC-sidebar{
+	background: #fff;
+	border-right: solid 1px #e1e1e8;
+	box-sizing: border-box;
+	height: 100vh;
+	left: 0;
+	padding: 30px;
+	position: fixed;
+	top: 0;
+	width: 240px;
+}
+.DOC-content{
+	box-sizing: border-box;
+	padding-left: 240px;
+	padding-right: 200px;
+}
+.DOC-toc{
+	position: fixed;
+	width: 200px;
+	top: 20px;
+	right: 0;
+	padding: 10px 15px;
+	border-left: solid 1px #e1e1e8;
+}
+.DOC-toc__title{
+	font-size: 14px;
+}
+.DOC-toc__nav{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	a{
+		color: inherit;
+		text-decoration: none;
+		font-size: 14px;
+		opacity: .6;
+	}
+	.DOC-toc__item--level2{
+		padding-left: 10px;
+	}
+}
+.DOC-container{
+	box-sizing: border-box;
+	padding: 30px;
+}
+.DOC-nav{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	ul{
+		list-style: none;
+		margin: 0;
+		padding-left: 20px;
+		display: none;
+	}
+}
+.DOC-nav__section{
+	a{
+		text-decoration: none;
+		color: #333;
+	}
+}
+.DOC-nav__section--active{
+	ul{
+		display: block;
+	}
+	a{
+		font-weight: 600;
+	}
+	.DOC-nav__section{
+		a{
+			font-weight: 400;
+		}
+		&--active{
+			a{
+				font-weight: 600;
+			}
+		}
+	}
+}
+.DOC-example{
+	border: 1px solid #e1e1e8;
+	margin: 15px 0;
+	&__title{
+		color: #ccc;
+		font-size: 12px;
+	}
+	&__preview,&__code{
+		padding: 10px;
+	}
+	&__code{
+		background: #f1f1f1;
+		border-top: 1px solid #e1e1e8;
+	}
+}
+.DOC-example__code{
+	pre[class*="language-"]{
+		background: transparent;
+		border: none;
+		padding: 0;
+		margin: 0;
+	}
+}
+.DOC-page__title{
+	font-size: 2.5rem;
+}
+.DOC-page__desc{
+	font-size: 1.2rem;
+	margin-bottom: 40px;
+}
