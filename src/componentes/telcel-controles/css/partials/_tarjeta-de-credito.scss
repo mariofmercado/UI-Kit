@@ -1,0 +1,56 @@
+.telcel-controles-tarjeta-de-credito{
+
+  @include flex-centrar-horizontal;
+  justify-content: flex-start;
+
+  .telcel-controles-tarjeta-de-credito--imagen{
+    text-align: center;
+    width: 5%;
+  }
+
+  .telcel-controles-tarjeta-de-credito--numero{
+    width: 95%;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+  }
+
+  .telcel-controles-tarjeta-de-credito--numero-inactivo{
+    width: 25%;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+  }
+
+  .telcel-controles-tarjeta-de-credito--fecha{
+    width: 70%;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+  }
+
+  .telcel-controles-tarjeta-de-credito--fecha-inactivo{
+    display: none;
+    width: 25%;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+  }
+
+  .telcel-controles-tarjeta-de-credito--cvv{
+    @include flex-centrar-horizontal;
+    justify-content: flex-start;
+    width: 45%;
+
+    -webkit-transition: width .3s;
+    transition: width .3s;
+
+    input{
+      width: 90%;
+    }
+  }
+
+  .telcel-controles-tarjeta-de-credito--cvv-inactivo{
+    display: none;
+    width: 0%;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+  }
+
+}

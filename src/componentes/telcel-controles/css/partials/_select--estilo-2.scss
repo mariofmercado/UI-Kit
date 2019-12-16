@@ -1,0 +1,189 @@
+.telcel-controles--select-checkbox--contenedor {
+  min-width: 160px;
+  position: relative;
+  @include media('<tablet') {
+    position: inherit;
+    min-width: 100%;
+  }
+
+  &.open {
+    .telcel-controles-contenedor--select-checkbox-filtro {
+      display: block;
+    }
+  }
+}
+
+.telcel-controles--select-checkbox--boton {
+  background: $blanco;
+  min-height: 40px;
+  width: 100%;
+  padding: 0 8px;
+  line-height: 40px;
+  color: $liga;
+  font-size: 14px;
+  border: none;
+  text-align: left;
+  @include sombra-caja($gris-medio-claro-accesible, 5px);
+
+  .telcel-controles--select-checkbox--boton-label {
+    width: 219px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .caret {
+    float: right;
+    margin-top: 20px;
+  }
+}
+
+.telcel-controles-contenedor--select-checkbox {
+  display: none;
+  position: absolute;
+  z-index: 10000;
+  background-color: $blanco;
+  width: 100%;
+  margin-top: 0;
+  border: 0;
+  @include sombra-caja($gris-medio-claro-accesible, 5px);
+  @include media('<tablet') {
+    float: none;
+    left: 0;
+  }
+
+  .telcel-controles-contenedor--select-checkbox--contenedor {
+    border-radius: 4px;
+    border: solid 1px $liga;
+    margin: 8px;
+    padding: 0;
+
+    h3 {
+      border-bottom: solid 1px $gris-claro;
+      font-size: 13px;
+      margin: 5px 0;
+      padding: 8px;
+      font-weight: 400;
+      color: $gris-medio-oscuro;
+    }
+
+    ul {
+      height: 180px;
+      overflow-y: auto;
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        font-size: 13px;
+        color: $gris-extra-oscuro;
+        padding: 5px;
+
+        label {
+          font-weight: 200;
+          width: 100%;
+          margin: 0;
+          min-height: 30px;
+          line-height: 40px;
+        }
+
+        input {
+          margin-right: 10px;
+        }
+
+        &:hover {
+          background-color: $alerta-celeste;
+        }
+
+        &.telcel-controles-contenedor--select-checkbox---activo {
+          background-color: $alerta-celeste;
+
+          label {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .telcel-controles-contenedor--select-checkbox--cta {
+    color: $liga;
+    float: right;
+    margin: 0 12px 8px 0;
+  }
+}
+
+.telcel-controles-contenedor--select-checkbox-filtro {
+  display: none;
+  position: absolute;
+  background-color: $blanco;
+  width: 100%;
+  margin-top: 0;
+  border: 0;
+  z-index: 2;
+  @include sombra-caja($gris-medio-claro-accesible, 5px);
+  @include media('<tablet') {
+    float: none;
+    left: 0;
+  }
+
+  .telcel-controles-contenedor--select-checkbox--contenedor {
+    border-radius: 4px;
+    border: solid 1px $liga;
+    margin: 10px;
+    padding: 0;
+
+    h3 {
+      border-bottom: solid 1px $gris-claro;
+      font-size: 13px;
+      margin: 5px 0;
+      padding: 10px;
+      font-weight: 400;
+      color: $gris-medio-oscuro;
+    }
+
+    ul {
+      height: 180px;
+      overflow-y: auto;
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        font-size: 13px;
+        color: $gris-extra-oscuro;
+        padding: 5px;
+
+        label {
+          font-weight: 200;
+          width: 100%;
+          margin: 0;
+          min-height: 30px;
+          line-height: 40px;
+        }
+
+        input {
+          margin-right: 10px;
+        }
+
+        &:hover {
+          background-color: $alerta-celeste;
+        }
+
+        &.telcel-controles-contenedor--select-checkbox---activo {
+          background-color: $alerta-celeste;
+
+          label {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .telcel-controles-contenedor--select-checkbox--cta {
+    color: $liga;
+    float: right;
+    margin: 0 12px 8px 0;
+  }
+}

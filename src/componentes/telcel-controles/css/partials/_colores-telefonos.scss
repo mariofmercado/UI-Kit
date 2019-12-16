@@ -1,0 +1,40 @@
+.select-simulado-color {
+  width: 13px;
+  height: 13px;
+  display: inline-flex;
+  border-radius: 50%;
+  position: relative;
+  top: 2px;
+}
+
+.filtro-negro {
+  background-color: #000000;
+}
+
+.filtro-gris {
+  background-color: #999999;
+}
+
+.filtro-azul {
+  background-color: #00529b;
+}
+
+.filtro-rojo {
+  background-color: #ff4500;
+}
+
+.filtro-verde {
+  background-color: #549D54;
+}
+
+.filtro-morado {
+  background-color: #6F44C8;
+}
+
+.filtro-dorado {
+  background-color: #B99919;
+}
+
+.filtro-blanco {
+  border: solid 1px #999999;
+}

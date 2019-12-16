@@ -1,0 +1,12 @@
+{
+  "name": "@santirisco/telcel-controles",
+  "version": "1.0.0",
+  "description": "Telcel Controles contiene, inputs, radio buttons, checkboxes",
+  "author": "Contento",
+  "repository" : {
+    "type": "git",
+    "url": "git://github.com/santirisco/telcel.git",
+    "directory": "componentes/telcel-controles"
+  },
+  "license": "ISC"
+}

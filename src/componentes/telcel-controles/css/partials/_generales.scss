@@ -1,0 +1,56 @@
+.telcel-controles-contenedor--no-margen {
+  .telcel-controles-contenedor {
+    margin: 0;
+  }
+}
+
+.telcel-controles-contenedor--alineacion-horizontal {
+  @include display-flex;
+  justify-content: flex-start;
+  @include media("<tablet") {
+    @include display-flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .telcel-controles-contenedor {
+    float: left;
+    margin: 0 8px 0 0;
+    width: 100%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    @include media("<1024px") {
+      margin-right: 5px;
+    }
+  }
+}
+
+.telcel-controles-contenedor--alineacion-vertical {
+  @include display-flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  @include media("<tablet") {
+    @include display-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .telcel-controles-contenedor {
+    float: left;
+    margin-right: 20px;
+    @include media("<1024px") {
+      margin-right: 5px;
+    }
+  }
+}
+
+.telcel-controles-contenedor {
+  margin: 20px 0;
+}
+
+.telcel-controles-contenedor--cta {
+  margin: 24px 0 0;
+}

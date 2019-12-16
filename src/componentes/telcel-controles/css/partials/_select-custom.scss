@@ -1,0 +1,112 @@
+.telcel-controles-contenedor-select{
+
+  .telcel-controles-select-simulado{
+
+    position: relative;
+
+    .telcel-controles-contenedor-dropdown{
+      width: 100%;
+      background: $blanco;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &.active{
+        >span{
+          border: 0;
+          height: 0;
+          padding: 0;
+          width: 100%;
+        }
+        .telcel-controles-select-opciones{
+          pointer-events: auto;
+          height: auto;
+          border-width: 1px;
+          z-index: 10;
+        }
+      }
+
+      >span{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px;
+        border: solid 1px #BAC9D8;
+        position: relative;
+        height: 43px;
+        transition: all 0.2s linear;
+        &:hover{
+          border: 1px solid $liga;
+        }
+        &:after{
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 40px;
+          height: 41px;
+          content: "";
+          background-image: url(../img/select.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: #f2f7f9;
+          border-bottom-right-radius: 3px;
+          border-top-right-radius: 3px;
+        }
+      }
+
+      .telcel-controles-titulo-select-simulado{
+        min-height: 43px;
+      }
+
+      .telcel-controles-select-opciones{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-left: 0px;
+        background-color: #ffffff;
+        border-radius: inherit;
+        border: 0px solid #0071D1;
+        font-weight: normal;
+        transition: all 0.1s linear;
+        list-style: none;
+        margin-bottom: 0;
+        overflow: hidden;
+        pointer-events: none;
+        height: 0;
+
+        .telcel-controles-header-select{
+          padding: 10px;
+          border-bottom: 1px solid $gris-claro-accesible;
+        }
+
+        ul{
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          overflow: hidden;
+          overflow-y: scroll;
+          max-height: 160px;
+          z-index: 10;
+
+          li{
+
+            a{
+              display: block;
+              padding: 10px;
+              text-decoration: none;
+              color: $gris-oscuro-accesible;
+              font-size: 13px;
+              &:hover{
+                background-color: $alerta-celeste;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}

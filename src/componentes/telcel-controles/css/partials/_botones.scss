@@ -1,0 +1,105 @@
+@mixin telcel-cta{
+  background-color: $morado;
+  border: none;
+  border-radius: 4px;
+  color: $blanco;
+  text-align: center;
+  padding: 10px 24px;
+  text-decoration: none;
+  min-height: 24px;
+  line-height: 24px;
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+  @include media("<tablet") {
+    display: block;
+    min-height: 28px;
+    line-height: 25px;
+    margin: 0 auto 20px;
+  }
+
+  &:hover {
+    text-decoration: none;
+    background-color: lighten($morado, 2);
+    border: none;
+    @include sombra-botones;
+  }
+
+
+  color: $blanco;
+  &:hover{
+    color: $blanco;
+  }
+  &:active{
+    color: $blanco;
+  }
+  cursor: pointer;
+  pointer-events: all;
+}
+
+
+@mixin boton-cta-deshabilitado{
+  @include telcel-cta;
+  background-color: $borde-control-deshabilitado;
+  color: $etiqueta-control-habilitado;
+  pointer-events: none;
+  &:hover{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+@mixin telcel-cta--flecha{
+  @include telcel-cta;
+  &:after {
+    background-image: url("../img/flecha-sig.svg");
+    background-repeat: no-repeat;
+    content: " ";
+    width: 30px;
+    height: 6px;
+    padding-left: 7px;
+    margin-left: 8px;
+    top: 3px;
+    position: relative;
+  }
+}
+
+@mixin telcel-cta--borde{
+  @include boton-cta-blanco-borde-morado;
+  color: $morado;
+  &:hover{
+    color: $morado;
+  }
+  &:active{
+    color: $morado;
+  }
+  cursor: pointer;
+  pointer-events: all;
+}
+
+
+a.telcel-controles-cta, button.telcel-controles-cta{
+  @include telcel-cta;
+}
+
+a.telcel-controles-siguiente, button.telcel-controles-siguiente{
+  @include telcel-cta;
+}
+
+a.telcel-controles-siguiente--flecha, button.telcel-controles-siguiente--flecha{
+  @include telcel-cta--flecha;
+}
+
+
+ a.telcel-controles-cta--borde, button.telcel-controles-cta--borde{
+   @include telcel-cta--borde;
+ }
+
+ a.telcel-controles-siguiente--borde, button.telcel-controles-siguiente--borde{
+   @include telcel-cta--borde;
+ }
+
+a.telcel-controles-boton-desactivado{
+  @include boton-cta-deshabilitado;
+}

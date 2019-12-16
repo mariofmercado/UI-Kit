@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>Icon/Tarjeta</title>
+    <desc>Created with Sketch.</desc>
+    <g id="d-V3-con-cuenta" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="checkout-dsk-pagoTDC-con-cta-nueva-tarjeta-B" transform="translate(-212.000000, -570.000000)">
+            <g id="Group-2" transform="translate(172.000000, 424.000000)">
+                <g id="nuevatarjeta-deleccionada" transform="translate(0.000000, 134.000000)">
+                    <g id="nueva-tarjeta" transform="translate(16.000000, 8.000000)">
+                        <g id="Icon/Tarjeta" transform="translate(24.000000, 0.000000)">
+                            <rect id="Container" x="0" y="0" width="24" height="24"></rect>
+                            <path d="M20.7083333,19.2083333 L3.29166667,19.2083333 C2.27875,19.2083333 1.45833333,18.3879167 1.45833333,17.375 L1.45833333,7.29166667 C1.45833333,6.27875 2.27875,5.45833333 3.29166667,5.45833333 L20.7083333,5.45833333 C21.72125,5.45833333 22.5416667,6.27875 22.5416667,7.29166667 L22.5416667,17.375 C22.5416667,18.3879167 21.72125,19.2083333 20.7083333,19.2083333 L20.7083333,19.2083333 Z" id="Stroke" stroke="#00529B" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <polygon id="Stroke" stroke="#00529B" stroke-linecap="round" stroke-linejoin="round" points="1.45833333 10.9583333 22.5416667 10.9583333 22.5416667 8.20833333 1.45833333 8.20833333"></polygon>
+                            <line x1="4.20833333" y1="14.1666667" x2="7.875" y2="14.1666667" id="Stroke" stroke="#00529B" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="4.20833333" y1="16" x2="10.625" y2="16" id="Stroke" stroke="#00529B" stroke-linecap="round" stroke-linejoin="round"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

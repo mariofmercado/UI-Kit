@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Cache-control" content="public">
+  <meta name="author" content="Multiplica">
+
+  <title>Componentes - Telcel Controles</title>
+
+  <!-- Dependencias de JS obligatorias -->
+  <script src="../../js/jquery-1.11.1.min.js"></script>
+  <script src="../../js/mobile-detect.min.js"></script>
+  <script src="../../js/bodyScrollLock.js"></script>
+  <!-- Dependencias de JS obligatorias -->
+
+  <script>
+    $(document).ready(function() {
+      /*Se coloca un timer para esperar a que los estilos esten cargados*/
+      Telcel.cargando_pagina();
+      Telcel.cargar_css(["../../css/bootstrap.css",
+        "../../css/telcelFont.css",
+        "../../css/custom.css",
+        "../../css/widgets.css",
+        "../../componentes/telcel-menu-principal/css/menu-nuevo.min.css",
+        "../../componentes/telcel-controles/css/telcel-controles.min.css",
+        "http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600"
+      ]);
+      Telcel.cargar_componente('telcel-controles','estilo-0');
+      Telcel.cargar_componente('telcel-controles','estilo-3');
+      Telcel.cargar_componente('telcel-controles','estilo-4');
+      Telcel.init();
+    });
+  </script>
+
+  <!-- Dependencias de JS generales no esenciales -->
+  <script defer src="../../js/bootstrap.js"></script>
+  <script defer src="../../js/owl.carousel.min.js"></script>
+  <script defer src="../../js/spin.min.js"></script>
+  <script defer src="../../../js/telcel/src/telcel-libreria-general.js"></script>
+  <!-- Dependencias de JS generales no esenciales -->
+
+  <script defer src="../../componentes/telcel-controles/js/telcel-controles.js"></script>
+
+</head>
+<body id="index-controles">
+
+  <div class="container-fluid">
+    <div class="comp-telcel-controles"></div>
+    <div class="comp-telcel-controles"></div>
+    <div class="comp-telcel-controles"></div>
+  </div>
+
+</body>
+</html>

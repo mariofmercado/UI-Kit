@@ -1,0 +1,1389 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap");
+/*
+
+ Estandar de codificacion para colores accesibles:
+
+ - Nombre compuesto del color separado por guion
+ - Sufijo accesible al final del nombre del color para diferenciar cuando sean
+   colores accesibles.
+
+*/
+/* Sombras */
+/* Sombras */
+/* Padding y margenes */
+/* Padding y margenes */
+/* Alineacion y Orientacion */
+/* Alineacion y Orientacion */
+.telcel-controles-contenedor--no-margen .telcel-controles-contenedor {
+  margin: 0;
+}
+
+.telcel-controles-contenedor--alineacion-horizontal {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 767px) {
+  .telcel-controles-contenedor--alineacion-horizontal {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+.telcel-controles-contenedor--alineacion-horizontal .telcel-controles-contenedor {
+  float: left;
+  margin: 0 8px 0 0;
+  width: 100%;
+}
+
+.telcel-controles-contenedor--alineacion-horizontal .telcel-controles-contenedor:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 1023px) {
+  .telcel-controles-contenedor--alineacion-horizontal .telcel-controles-contenedor {
+    margin-right: 5px;
+  }
+}
+
+.telcel-controles-contenedor--alineacion-vertical {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .telcel-controles-contenedor--alineacion-vertical {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.telcel-controles-contenedor--alineacion-vertical .telcel-controles-contenedor {
+  float: left;
+  margin-right: 20px;
+}
+
+@media (max-width: 1023px) {
+  .telcel-controles-contenedor--alineacion-vertical .telcel-controles-contenedor {
+    margin-right: 5px;
+  }
+}
+
+.telcel-controles-contenedor {
+  margin: 20px 0;
+}
+
+.telcel-controles-contenedor--cta {
+  margin: 24px 0 0;
+}
+
+.telcel-controles-contenedor {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto {
+  position: relative;
+  border: 1px solid #bac9d8;
+  border-radius: 5px;
+  margin: 20px 0 5px;
+  /*
+      Estados: activo, inactivo, error, exito
+    */
+}
+
+@media (max-width: 767px) {
+  .telcel-controles-contenedor .telcel-controles-campo-de-texto {
+    margin: 0;
+  }
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto .telcel-controles-campo-de-texto-contenido {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto label {
+  border-radius: 5px;
+  position: absolute;
+  top: -13px;
+  left: 10px;
+  font-size: 11px;
+  background-color: #FFFFFF;
+  padding: 5px 10px;
+  color: #595959;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto input {
+  padding: 10px;
+  border: none;
+  min-height: 40px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto input:-webkit-autofill, .telcel-controles-contenedor .telcel-controles-campo-de-texto input:-webkit-autofill:active, .telcel-controles-contenedor .telcel-controles-campo-de-texto input:-webkit-autofill:focus, .telcel-controles-contenedor .telcel-controles-campo-de-texto input:-webkit-autofill:hover {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto input:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+@media (max-width: 768px) {
+  .telcel-controles-contenedor .telcel-controles-campo-de-texto input {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .telcel-controles-contenedor .telcel-controles-campo-de-texto input {
+    width: 100%;
+    clear: both;
+    float: none;
+    font-size: 16px;
+  }
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto:hover {
+  border: 1px solid #0071D1;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto:hover label {
+  color: #0071D1;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto:hover a {
+  color: #0071D1;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto.telcel-controles-campo-de-texto-cta input {
+  width: 70%;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto.telcel-controles-campo-de-texto-tooltip input {
+  width: 90%;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto.telcel-controles-campo-de-texto-bloqueado {
+  background-color: #f8f8f8;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto.telcel-controles-campo-de-texto-bloqueado input {
+  background-color: #f8f8f8;
+  width: 90%;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto.telcel-controles-campo-de-texto-bloqueado:hover {
+  border: 1px solid #d0d0d0;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto.telcel-controles-campo-de-texto-bloqueado:hover label {
+  color: #595959;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto.telcel-controles-campo-de-texto-bloqueado:hover a {
+  color: #595959;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto.telcel-controles-campo-de-texto-bloqueado .telcel-controles-campo-de-texto-bloqueado-imagen {
+  width: 10%;
+  float: right;
+  text-align: center;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto a.telcel-campo-de-texto-contrasena {
+  width: 10%;
+  float: right;
+  text-align: center;
+  outline: 0;
+  border: 0;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto a.telcel-campo-de-texto-tooltip {
+  width: 10%;
+  float: right;
+  text-align: center;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto a.telcel-campo-de-texto-cta {
+  width: 30%;
+  color: #595959;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #F2F7F9;
+  float: right;
+  text-decoration: none;
+  height: 41px;
+  line-height: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+  opacity: 0;
+  transition: all 0.6s linear;
+}
+
+@media (max-width: 768px) {
+  .telcel-controles-contenedor .telcel-controles-campo-de-texto a.telcel-campo-de-texto-cta {
+    width: 50%;
+  }
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto a.telcel-campo-de-texto-cta:hover {
+  text-decoration: none;
+  background-color: #e8f1f4;
+}
+
+@media (max-width: 767px) {
+  .telcel-controles-contenedor .telcel-controles-campo-de-texto a.telcel-campo-de-texto-cta {
+    width: 100%;
+    clear: both;
+    float: none;
+  }
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto a.telcel-controles-boton-presente {
+  opacity: 1;
+  display: block;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto.telcel-controles-campo-de-texto-focus {
+  border: 1px solid #0071D1;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto.telcel-controles-campo-de-texto-focus label {
+  color: #0071D1;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto.telcel-controles-campo-de-texto-focus a {
+  color: #0071D1;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto .telcel-controles-campo-de-texto-input--tarjeta-numero {
+  width: 45%;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto .telcel-controles-campo-de-texto-input--tarjeta-fecha {
+  width: 30%;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto .telcel-controles-campo-de-texto-input--tarjeta-cvv {
+  width: 25%;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto--deshabilitado {
+  background-color: #f8f8f8;
+  border: 1px solid #d0d0d0;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto--deshabilitado:hover {
+  border: 1px solid #d0d0d0;
+  color: #595959;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto--deshabilitado:hover label {
+  color: #595959;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto--deshabilitado input {
+  background-color: #f8f8f8;
+  color: #595959;
+}
+
+.telcel-controles-contenedor .telcel-controles-campo-de-texto--deshabilitado input:hover {
+  color: #595959;
+}
+
+.telcel-controles-contenedor.telcel-controles-error-contenedor .telcel-controles-campo-de-texto {
+  border: 1px solid #d32222;
+}
+
+.telcel-controles-contenedor.telcel-controles-error-contenedor .telcel-controles-campo-de-texto label {
+  color: #d32222;
+}
+
+.telcel-controles-contenedor.telcel-controles-error-contenedor .telcel-controles-error-contenido {
+  color: #d32222;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.telcel-controles-contenedor--textos {
+  font-size: 13px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+  .telcel-controles-contenedor--textos {
+    margin-bottom: 0;
+  }
+}
+
+.telcel-controles-contenedor--textos-plan {
+  font-size: 13px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+  .telcel-controles-contenedor--textos-plan {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .plan-text-espacio {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+a.telcel-controles-cta, button.telcel-controles-cta {
+  background-color: #7b1fa2;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 24px;
+  text-decoration: none;
+  min-height: 24px;
+  line-height: 24px;
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+  color: #FFFFFF;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+@media (max-width: 767px) {
+  a.telcel-controles-cta, button.telcel-controles-cta {
+    display: block;
+    min-height: 28px;
+    line-height: 25px;
+    margin: 0 auto 20px;
+  }
+}
+
+a.telcel-controles-cta:hover, button.telcel-controles-cta:hover {
+  text-decoration: none;
+  background-color: #8221ab;
+  border: none;
+  -webkit-box-shadow: 0 1px 5px 1px #b3afb3;
+  -moz-box-shadow: 0 1px 5px 1px #b3afb3;
+  box-shadow: 0 1px 5px 1px #b3afb3;
+}
+
+a.telcel-controles-cta:hover, button.telcel-controles-cta:hover {
+  color: #FFFFFF;
+}
+
+a.telcel-controles-cta:active, button.telcel-controles-cta:active {
+  color: #FFFFFF;
+}
+
+a.telcel-controles-siguiente, button.telcel-controles-siguiente {
+  background-color: #7b1fa2;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 24px;
+  text-decoration: none;
+  min-height: 24px;
+  line-height: 24px;
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+  color: #FFFFFF;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+@media (max-width: 767px) {
+  a.telcel-controles-siguiente, button.telcel-controles-siguiente {
+    display: block;
+    min-height: 28px;
+    line-height: 25px;
+    margin: 0 auto 20px;
+  }
+}
+
+a.telcel-controles-siguiente:hover, button.telcel-controles-siguiente:hover {
+  text-decoration: none;
+  background-color: #8221ab;
+  border: none;
+  -webkit-box-shadow: 0 1px 5px 1px #b3afb3;
+  -moz-box-shadow: 0 1px 5px 1px #b3afb3;
+  box-shadow: 0 1px 5px 1px #b3afb3;
+}
+
+a.telcel-controles-siguiente:hover, button.telcel-controles-siguiente:hover {
+  color: #FFFFFF;
+}
+
+a.telcel-controles-siguiente:active, button.telcel-controles-siguiente:active {
+  color: #FFFFFF;
+}
+
+a.telcel-controles-siguiente--flecha, button.telcel-controles-siguiente--flecha {
+  background-color: #7b1fa2;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 24px;
+  text-decoration: none;
+  min-height: 24px;
+  line-height: 24px;
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+  color: #FFFFFF;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+@media (max-width: 767px) {
+  a.telcel-controles-siguiente--flecha, button.telcel-controles-siguiente--flecha {
+    display: block;
+    min-height: 28px;
+    line-height: 25px;
+    margin: 0 auto 20px;
+  }
+}
+
+a.telcel-controles-siguiente--flecha:hover, button.telcel-controles-siguiente--flecha:hover {
+  text-decoration: none;
+  background-color: #8221ab;
+  border: none;
+  -webkit-box-shadow: 0 1px 5px 1px #b3afb3;
+  -moz-box-shadow: 0 1px 5px 1px #b3afb3;
+  box-shadow: 0 1px 5px 1px #b3afb3;
+}
+
+a.telcel-controles-siguiente--flecha:hover, button.telcel-controles-siguiente--flecha:hover {
+  color: #FFFFFF;
+}
+
+a.telcel-controles-siguiente--flecha:active, button.telcel-controles-siguiente--flecha:active {
+  color: #FFFFFF;
+}
+
+a.telcel-controles-siguiente--flecha:after, button.telcel-controles-siguiente--flecha:after {
+  background-image: url("../img/flecha-sig.svg");
+  background-repeat: no-repeat;
+  content: " ";
+  width: 30px;
+  height: 6px;
+  padding-left: 7px;
+  margin-left: 8px;
+  top: 3px;
+  position: relative;
+}
+
+a.telcel-controles-cta--borde, button.telcel-controles-cta--borde {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: solid 1px #7b1fa2;
+  color: #7b1fa2;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  min-height: 20px;
+  line-height: 20px;
+  display: block;
+  font-weight: 600;
+  color: #7b1fa2;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+@media (max-width: 767px) {
+  a.telcel-controles-cta--borde, button.telcel-controles-cta--borde {
+    display: block;
+    min-height: 28px;
+    line-height: 25px;
+    margin: 0 auto;
+  }
+}
+
+a.telcel-controles-cta--borde:hover, button.telcel-controles-cta--borde:hover {
+  text-decoration: none;
+  color: #7b1fa2;
+  background-color: #EBDEF1;
+  -webkit-box-shadow: 0 1px 5px 1px #b3afb3;
+  -moz-box-shadow: 0 1px 5px 1px #b3afb3;
+  box-shadow: 0 1px 5px 1px #b3afb3;
+}
+
+a.telcel-controles-cta--borde:hover, button.telcel-controles-cta--borde:hover {
+  color: #7b1fa2;
+}
+
+a.telcel-controles-cta--borde:active, button.telcel-controles-cta--borde:active {
+  color: #7b1fa2;
+}
+
+a.telcel-controles-siguiente--borde, button.telcel-controles-siguiente--borde {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: solid 1px #7b1fa2;
+  color: #7b1fa2;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  min-height: 20px;
+  line-height: 20px;
+  display: block;
+  font-weight: 600;
+  color: #7b1fa2;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+@media (max-width: 767px) {
+  a.telcel-controles-siguiente--borde, button.telcel-controles-siguiente--borde {
+    display: block;
+    min-height: 28px;
+    line-height: 25px;
+    margin: 0 auto;
+  }
+}
+
+a.telcel-controles-siguiente--borde:hover, button.telcel-controles-siguiente--borde:hover {
+  text-decoration: none;
+  color: #7b1fa2;
+  background-color: #EBDEF1;
+  -webkit-box-shadow: 0 1px 5px 1px #b3afb3;
+  -moz-box-shadow: 0 1px 5px 1px #b3afb3;
+  box-shadow: 0 1px 5px 1px #b3afb3;
+}
+
+a.telcel-controles-siguiente--borde:hover, button.telcel-controles-siguiente--borde:hover {
+  color: #7b1fa2;
+}
+
+a.telcel-controles-siguiente--borde:active, button.telcel-controles-siguiente--borde:active {
+  color: #7b1fa2;
+}
+
+a.telcel-controles-boton-desactivado {
+  background-color: #7b1fa2;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 24px;
+  text-decoration: none;
+  min-height: 24px;
+  line-height: 24px;
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+  color: #FFFFFF;
+  cursor: pointer;
+  pointer-events: all;
+  background-color: #d0d0d0;
+  color: #595959;
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  a.telcel-controles-boton-desactivado {
+    display: block;
+    min-height: 28px;
+    line-height: 25px;
+    margin: 0 auto 20px;
+  }
+}
+
+a.telcel-controles-boton-desactivado:hover {
+  text-decoration: none;
+  background-color: #8221ab;
+  border: none;
+  -webkit-box-shadow: 0 1px 5px 1px #b3afb3;
+  -moz-box-shadow: 0 1px 5px 1px #b3afb3;
+  box-shadow: 0 1px 5px 1px #b3afb3;
+}
+
+a.telcel-controles-boton-desactivado:hover {
+  color: #FFFFFF;
+}
+
+a.telcel-controles-boton-desactivado:active {
+  color: #FFFFFF;
+}
+
+a.telcel-controles-boton-desactivado:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.telcel-controles-radio:checked,
+.telcel-controles-radio:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.telcel-controles-radio:checked + label,
+.telcel-controles-radio:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666666;
+}
+
+.telcel-controles-radio:checked + label:before,
+.telcel-controles-radio:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #0071D1;
+  border-radius: 100%;
+  background: #FFFFFF;
+}
+
+.telcel-controles-radio:checked + label:after,
+.telcel-controles-radio:not(:checked) + label:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #0071D1;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.telcel-controles-radio:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.telcel-controles-radio:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+input[type="radio"].telcel-controles-radio--estilo-2:checked,
+input[type="radio"].telcel-controles-radio--estilo-2:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="radio"].telcel-controles-radio--estilo-2:checked + label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  color: #FFFFFF;
+  z-index: 1;
+  width: 100%;
+  padding: 12px 10px;
+  height: 35px;
+  line-height: 15px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  input[type="radio"].telcel-controles-radio--estilo-2:checked + label {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  input[type="radio"].telcel-controles-radio--estilo-2:checked + label {
+    padding: 10px;
+  }
+}
+
+input[type="radio"].telcel-controles-radio--estilo-2:not(:checked) + label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  color: #0071D1;
+  z-index: 1;
+  width: 100%;
+  padding: 12px 10px;
+  height: 35px;
+  line-height: 15px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  input[type="radio"].telcel-controles-radio--estilo-2:not(:checked) + label {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  input[type="radio"].telcel-controles-radio--estilo-2:not(:checked) + label {
+    padding: 10px;
+  }
+}
+
+input[type="radio"].telcel-controles-radio--estilo-2:checked + label:before,
+input[type="radio"].telcel-controles-radio--estilo-2:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 43px;
+  border: 1px solid #0071D1;
+  background: #FFFFFF;
+  border-radius: 4px;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  input[type="radio"].telcel-controles-radio--estilo-2:checked + label:before,
+  input[type="radio"].telcel-controles-radio--estilo-2:not(:checked) + label:before {
+    height: 35px;
+  }
+}
+
+input[type="radio"].telcel-controles-radio--estilo-2:checked + label:after,
+input[type="radio"].telcel-controles-radio--estilo-2:not(:checked) + label:after {
+  content: '';
+  width: 100%;
+  height: 43px;
+  background: #0071D1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  input[type="radio"].telcel-controles-radio--estilo-2:checked + label:after,
+  input[type="radio"].telcel-controles-radio--estilo-2:not(:checked) + label:after {
+    height: 35px;
+  }
+}
+
+input[type="radio"].telcel-controles-radio--estilo-2:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+input[type="radio"].telcel-controles-radio--estilo-2:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.telcel-controles-checkbox {
+  margin-right: 15px;
+}
+
+.telcel-controles-checkbox label {
+  font-size: 14px;
+  color: #757575;
+  font-weight: 400;
+}
+
+.telcel-controles-checkbox input {
+  margin-right: 5px;
+}
+
+.telcel-controles-contenedor-select .telcel-controles-select-simulado {
+  position: relative;
+}
+
+.telcel-controles-contenedor-select .telcel-controles-select-simulado .telcel-controles-contenedor-dropdown {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.telcel-controles-contenedor-select .telcel-controles-select-simulado .telcel-controles-contenedor-dropdown.active > span {
+  border: 0;
+  height: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.telcel-controles-contenedor-select .telcel-controles-select-simulado .telcel-controles-contenedor-dropdown.active .telcel-controles-select-opciones {
+  pointer-events: auto;
+  height: auto;
+  border-width: 1px;
+  z-index: 10;
+}
+
+.telcel-controles-contenedor-select .telcel-controles-select-simulado .telcel-controles-contenedor-dropdown > span {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: solid 1px #BAC9D8;
+  position: relative;
+  height: 43px;
+  transition: all 0.2s linear;
+}
+
+.telcel-controles-contenedor-select .telcel-controles-select-simulado .telcel-controles-contenedor-dropdown > span:hover {
+  border: 1px solid #0071D1;
+}
+
+.telcel-controles-contenedor-select .telcel-controles-select-simulado .telcel-controles-contenedor-dropdown > span:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 41px;
+  content: "";
+  background-image: url(../img/select.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f2f7f9;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.telcel-controles-contenedor-select .telcel-controles-select-simulado .telcel-controles-contenedor-dropdown .telcel-controles-titulo-select-simulado {
+  min-height: 43px;
+}
+
+.telcel-controles-contenedor-select .telcel-controles-select-simulado .telcel-controles-contenedor-dropdown .telcel-controles-select-opciones {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 0px;
+  background-color: #ffffff;
+  border-radius: inherit;
+  border: 0px solid #0071D1;
+  font-weight: normal;
+  transition: all 0.1s linear;
+  list-style: none;
+  margin-bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+  height: 0;
+}
+
+.telcel-controles-contenedor-select .telcel-controles-select-simulado .telcel-controles-contenedor-dropdown .telcel-controles-select-opciones .telcel-controles-header-select {
+  padding: 10px;
+  border-bottom: 1px solid #F2F7F9;
+}
+
+.telcel-controles-contenedor-select .telcel-controles-select-simulado .telcel-controles-contenedor-dropdown .telcel-controles-select-opciones ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 160px;
+  z-index: 10;
+}
+
+.telcel-controles-contenedor-select .telcel-controles-select-simulado .telcel-controles-contenedor-dropdown .telcel-controles-select-opciones ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #4A4A4A;
+  font-size: 13px;
+}
+
+.telcel-controles-contenedor-select .telcel-controles-select-simulado .telcel-controles-contenedor-dropdown .telcel-controles-select-opciones ul li a:hover {
+  background-color: #f2f7f9;
+}
+
+select.telcel-controles-select {
+  width: 100%;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  background: url("data:image/svg+xml;utf8,<svg fill='444' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  position: relative;
+  border: 1px solid #bac9d8;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.telcel-controles--select-checkbox--contenedor {
+  min-width: 160px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .telcel-controles--select-checkbox--contenedor {
+    position: inherit;
+    min-width: 100%;
+  }
+}
+
+.telcel-controles--select-checkbox--contenedor.open .telcel-controles-contenedor--select-checkbox-filtro {
+  display: block;
+}
+
+.telcel-controles--select-checkbox--boton {
+  background: #FFFFFF;
+  min-height: 40px;
+  width: 100%;
+  padding: 0 8px;
+  line-height: 40px;
+  color: #0071D1;
+  font-size: 14px;
+  border: none;
+  text-align: left;
+  -webkit-box-shadow: 0 0 5px 0 #B8CDD2;
+  -moz-box-shadow: 0 0 5px 0 #B8CDD2;
+  box-shadow: 0 0 5px 0 #B8CDD2;
+}
+
+.telcel-controles--select-checkbox--boton .telcel-controles--select-checkbox--boton-label {
+  width: 219px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.telcel-controles--select-checkbox--boton .caret {
+  float: right;
+  margin-top: 20px;
+}
+
+.telcel-controles-contenedor--select-checkbox {
+  display: none;
+  position: absolute;
+  z-index: 10000;
+  background-color: #FFFFFF;
+  width: 100%;
+  margin-top: 0;
+  border: 0;
+  -webkit-box-shadow: 0 0 5px 0 #B8CDD2;
+  -moz-box-shadow: 0 0 5px 0 #B8CDD2;
+  box-shadow: 0 0 5px 0 #B8CDD2;
+}
+
+@media (max-width: 767px) {
+  .telcel-controles-contenedor--select-checkbox {
+    float: none;
+    left: 0;
+  }
+}
+
+.telcel-controles-contenedor--select-checkbox .telcel-controles-contenedor--select-checkbox--contenedor {
+  border-radius: 4px;
+  border: solid 1px #0071D1;
+  margin: 8px;
+  padding: 0;
+}
+
+.telcel-controles-contenedor--select-checkbox .telcel-controles-contenedor--select-checkbox--contenedor h3 {
+  border-bottom: solid 1px #f8f8f8;
+  font-size: 13px;
+  margin: 5px 0;
+  padding: 8px;
+  font-weight: 400;
+  color: #757575;
+}
+
+.telcel-controles-contenedor--select-checkbox .telcel-controles-contenedor--select-checkbox--contenedor ul {
+  height: 180px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.telcel-controles-contenedor--select-checkbox .telcel-controles-contenedor--select-checkbox--contenedor ul li {
+  list-style: none;
+  font-size: 13px;
+  color: #4a4a4a;
+  padding: 5px;
+}
+
+.telcel-controles-contenedor--select-checkbox .telcel-controles-contenedor--select-checkbox--contenedor ul li label {
+  font-weight: 200;
+  width: 100%;
+  margin: 0;
+  min-height: 30px;
+  line-height: 40px;
+}
+
+.telcel-controles-contenedor--select-checkbox .telcel-controles-contenedor--select-checkbox--contenedor ul li input {
+  margin-right: 10px;
+}
+
+.telcel-controles-contenedor--select-checkbox .telcel-controles-contenedor--select-checkbox--contenedor ul li:hover {
+  background-color: #f2f7f9;
+}
+
+.telcel-controles-contenedor--select-checkbox .telcel-controles-contenedor--select-checkbox--contenedor ul li.telcel-controles-contenedor--select-checkbox---activo {
+  background-color: #f2f7f9;
+}
+
+.telcel-controles-contenedor--select-checkbox .telcel-controles-contenedor--select-checkbox--contenedor ul li.telcel-controles-contenedor--select-checkbox---activo label {
+  font-weight: 600;
+}
+
+.telcel-controles-contenedor--select-checkbox .telcel-controles-contenedor--select-checkbox--cta {
+  color: #0071D1;
+  float: right;
+  margin: 0 12px 8px 0;
+}
+
+.telcel-controles-contenedor--select-checkbox-filtro {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 100%;
+  margin-top: 0;
+  border: 0;
+  z-index: 2;
+  -webkit-box-shadow: 0 0 5px 0 #B8CDD2;
+  -moz-box-shadow: 0 0 5px 0 #B8CDD2;
+  box-shadow: 0 0 5px 0 #B8CDD2;
+}
+
+@media (max-width: 767px) {
+  .telcel-controles-contenedor--select-checkbox-filtro {
+    float: none;
+    left: 0;
+  }
+}
+
+.telcel-controles-contenedor--select-checkbox-filtro .telcel-controles-contenedor--select-checkbox--contenedor {
+  border-radius: 4px;
+  border: solid 1px #0071D1;
+  margin: 10px;
+  padding: 0;
+}
+
+.telcel-controles-contenedor--select-checkbox-filtro .telcel-controles-contenedor--select-checkbox--contenedor h3 {
+  border-bottom: solid 1px #f8f8f8;
+  font-size: 13px;
+  margin: 5px 0;
+  padding: 10px;
+  font-weight: 400;
+  color: #757575;
+}
+
+.telcel-controles-contenedor--select-checkbox-filtro .telcel-controles-contenedor--select-checkbox--contenedor ul {
+  height: 180px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.telcel-controles-contenedor--select-checkbox-filtro .telcel-controles-contenedor--select-checkbox--contenedor ul li {
+  list-style: none;
+  font-size: 13px;
+  color: #4a4a4a;
+  padding: 5px;
+}
+
+.telcel-controles-contenedor--select-checkbox-filtro .telcel-controles-contenedor--select-checkbox--contenedor ul li label {
+  font-weight: 200;
+  width: 100%;
+  margin: 0;
+  min-height: 30px;
+  line-height: 40px;
+}
+
+.telcel-controles-contenedor--select-checkbox-filtro .telcel-controles-contenedor--select-checkbox--contenedor ul li input {
+  margin-right: 10px;
+}
+
+.telcel-controles-contenedor--select-checkbox-filtro .telcel-controles-contenedor--select-checkbox--contenedor ul li:hover {
+  background-color: #f2f7f9;
+}
+
+.telcel-controles-contenedor--select-checkbox-filtro .telcel-controles-contenedor--select-checkbox--contenedor ul li.telcel-controles-contenedor--select-checkbox---activo {
+  background-color: #f2f7f9;
+}
+
+.telcel-controles-contenedor--select-checkbox-filtro .telcel-controles-contenedor--select-checkbox--contenedor ul li.telcel-controles-contenedor--select-checkbox---activo label {
+  font-weight: 600;
+}
+
+.telcel-controles-contenedor--select-checkbox-filtro .telcel-controles-contenedor--select-checkbox--cta {
+  color: #0071D1;
+  float: right;
+  margin: 0 12px 8px 0;
+}
+
+@media (max-width: 767px) {
+  .telcel-controles--hidden-sm {
+    display: none;
+  }
+}
+
+.telcel-controles-tarjeta-de-credito {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+}
+
+.telcel-controles-tarjeta-de-credito .telcel-controles-tarjeta-de-credito--imagen {
+  text-align: center;
+  width: 5%;
+}
+
+.telcel-controles-tarjeta-de-credito .telcel-controles-tarjeta-de-credito--numero {
+  width: 95%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.telcel-controles-tarjeta-de-credito .telcel-controles-tarjeta-de-credito--numero-inactivo {
+  width: 25%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.telcel-controles-tarjeta-de-credito .telcel-controles-tarjeta-de-credito--fecha {
+  width: 70%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.telcel-controles-tarjeta-de-credito .telcel-controles-tarjeta-de-credito--fecha-inactivo {
+  display: none;
+  width: 25%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.telcel-controles-tarjeta-de-credito .telcel-controles-tarjeta-de-credito--cvv {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  width: 45%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.telcel-controles-tarjeta-de-credito .telcel-controles-tarjeta-de-credito--cvv input {
+  width: 90%;
+}
+
+.telcel-controles-tarjeta-de-credito .telcel-controles-tarjeta-de-credito--cvv-inactivo {
+  display: none;
+  width: 0%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.select-simulado-color {
+  width: 13px;
+  height: 13px;
+  display: inline-flex;
+  border-radius: 50%;
+  position: relative;
+  top: 2px;
+}
+
+.filtro-negro {
+  background-color: #000000;
+}
+
+.filtro-gris {
+  background-color: #999999;
+}
+
+.filtro-azul {
+  background-color: #00529b;
+}
+
+.filtro-rojo {
+  background-color: #ff4500;
+}
+
+.filtro-verde {
+  background-color: #549D54;
+}
+
+.filtro-morado {
+  background-color: #6F44C8;
+}
+
+.filtro-dorado {
+  background-color: #B99919;
+}
+
+.filtro-blanco {
+  border: solid 1px #999999;
+}
+
+.tienda-select-comparador-contenedor {
+  padding: 16px;
+  background-color: #f2f7f9;
+}
+
+@media (max-width: 767px) {
+  .tienda-select-comparador-contenedor {
+    padding: 15px 0 5px;
+  }
+}
+
+.tienda-select-comparador-contenedor .contenedor-filtros-orden {
+  background: none;
+  border-bottom: none;
+}
+
+.tienda-select-comparador-contenedor .contenedor-selects .contenedor-tablinks .select-comparador-tienda-etiqueta {
+  color: #222222;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .tienda-select-comparador-contenedor .contenedor-selects .contenedor-tablinks .select-comparador-tienda-etiqueta {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    height: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tienda-select-comparador-contenedor .contenedor-selects .contenedor-tablinks .select-comparador-tienda-etiqueta {
+    height: 10px;
+  }
+}
+
+.tienda-select-comparador-contenedor .contenedor-selects .contenedor-tablinks label {
+  border-radius: 0;
+}
+
+.fixed-select {
+  position: fixed;
+  max-width: 980px;
+  width: 100%;
+  z-index: 1;
+  top: 65px;
+}
+
+@media (max-width: 991px) {
+  .fixed-select {
+    top: 50px;
+    max-width: 96%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fixed-select {
+    top: 50px;
+    padding-bottom: 16px;
+  }
+}
+
+.tienda-select-comparador-contenedor.fixed-select {
+  max-width: 100%;
+}
+
+.filtros-equipo-leyenda-nuevo {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  color: #222222;
+}
+
+.contenedor-filtros-orden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0 0;
+  border-bottom: 1px solid #e3e3e3;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .contenedor-filtros-orden {
+    padding: 16px 0;
+  }
+}
+
+.contenedor-filtros-orden span {
+  font-size: 13px;
+  font-weight: bold;
+  color: #222222;
+  padding: 3px 0 0;
+}
+
+.contenedor-filtros-orden a {
+  font-size: 13px;
+}
+
+.contenedor-filtros-orden ul {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-filtros-orden ul li {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+@media (max-width: 362px) {
+  .contenedor-filtros-orden ul li {
+    padding: 0 7px;
+  }
+}
+
+.contenedor-filtros-orden ul li a {
+  color: #0071D1;
+}
+
+.contenedor-filtros-orden ul li .active {
+  text-decoration: underline;
+}

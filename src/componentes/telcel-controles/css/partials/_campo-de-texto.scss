@@ -1,0 +1,251 @@
+.telcel-controles-contenedor {
+  font-family: $fuente-normal;
+
+  .telcel-controles-campo-de-texto {
+    position: relative;
+    border: 1px solid $borde-control-habilitado;
+    border-radius: 5px;
+    margin: 20px 0 5px;
+    @include media("<tablet") {
+      margin: 0;
+    }
+
+    .telcel-controles-campo-de-texto-contenido {
+      @include flex-centrar-horizontal;
+      justify-content: flex-start;
+      border-radius: 5px;
+    }
+
+    label {
+      border-radius: 5px;
+      position: absolute;
+      top: -13px;
+      left: 10px;
+      font-size: 11px;
+      background-color: $blanco;
+      padding: 5px 10px;
+      color: $etiqueta-control-habilitado;
+    }
+
+    input {
+      padding: 10px;
+      border: none;
+      min-height: 40px;
+      border-radius: 5px;
+      width: 100%;
+
+      &:-webkit-autofill,
+      &:-webkit-autofill:active,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:hover {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+      }
+
+      &:focus {
+        outline-color: transparent;
+        outline-style: none;
+      }
+      @include media("<=tablet") {
+        width: 50%;
+      }
+      @include media("<tablet") {
+        width: 100%;
+        clear: both;
+        float: none;
+        font-size: 16px;
+      }
+    }
+
+    &:hover {
+      border: 1px solid $liga;
+
+      label {
+        color: $liga;
+      }
+
+      a {
+        color: $liga;
+      }
+    }
+
+    &.telcel-controles-campo-de-texto-cta {
+      input {
+        width: 70%;
+      }
+    }
+
+    &.telcel-controles-campo-de-texto-tooltip {
+      input {
+        width: 90%;
+      }
+    }
+
+    &.telcel-controles-campo-de-texto-bloqueado {
+      background-color: $gris-claro;
+
+      background-image: url('../img/candado.svg');
+      background-repeat: no-repeat;
+      background-position: 275px 14px;
+
+      input {
+        background-color: $gris-claro;
+        width: 90%;
+      }
+
+      &:hover {
+        border: 1px solid $borde-control-deshabilitado;
+
+        label {
+          color: $etiqueta-control-habilitado;
+        }
+
+        a {
+          color: $etiqueta-control-habilitado;
+        }
+      }
+    }
+
+    a {
+      &.telcel-campo-de-texto-contrasena {
+        width: 10%;
+        float: right;
+        text-align: center;
+        outline: 0;
+        border: 0;
+      }
+
+      &.telcel-campo-de-texto-tooltip {
+        width: 10%;
+        float: right;
+        text-align: center;
+      }
+
+      &.telcel-campo-de-texto-cta {
+        width: 30%;
+        color: $etiqueta-control-habilitado;
+        font-size: 13px;
+        font-weight: 600;
+        text-align: center;
+        background-color: $gris-claro-accesible;
+        float: right;
+        text-decoration: none;
+        height: 41px;
+        line-height: 40px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: none;
+        opacity: 0;
+        transition: all 0.6s linear;
+        @include media("<=tablet") {
+          width: 50%;
+        }
+
+        &:hover {
+          text-decoration: none;
+          background-color: darken($gris-claro-accesible,3);
+        }
+        @include media("<tablet") {
+          width: 100%;
+          clear: both;
+          float: none;
+        }
+      }
+
+      &.telcel-controles-boton-presente {
+        opacity: 1;
+        display: block;
+      }
+    }
+    /*
+      Estados: activo, inactivo, error, exito
+    */
+    &.telcel-controles-campo-de-texto-focus {
+      border: 1px solid $liga;
+
+      label {
+        color: $liga;
+      }
+
+      a {
+        color: $liga;
+      }
+    }
+
+    .telcel-controles-campo-de-texto-input--tarjeta-numero {
+      width: 45%;
+    }
+
+    .telcel-controles-campo-de-texto-input--tarjeta-fecha {
+      width: 30%;
+    }
+
+    .telcel-controles-campo-de-texto-input--tarjeta-cvv {
+      width: 25%;
+    }
+  }
+
+  .telcel-controles-campo-de-texto--deshabilitado {
+    background-color: $gris-claro;
+    border: 1px solid $borde-control-deshabilitado;
+
+    &:hover {
+      border: 1px solid $borde-control-deshabilitado;
+      color: $etiqueta-control-habilitado;
+
+      label {
+        color: $etiqueta-control-habilitado;
+      }
+    }
+
+    input {
+      background-color: $gris-claro;
+      color: $etiqueta-control-habilitado;
+
+      &:hover {
+        color: $etiqueta-control-habilitado;
+      }
+    }
+  }
+  //El contenedor tiene errores
+  &.telcel-controles-error-contenedor {
+    .telcel-controles-campo-de-texto {
+      border: 1px solid $alerta-rojo;
+
+      label {
+        color: $alerta-rojo;
+      }
+    }
+
+    .telcel-controles-error-contenido {
+      color: $alerta-rojo;
+      font-size: 13px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.telcel-controles-contenedor--textos {
+  font-size: 13px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 8px;
+  @include media("<tablet") {
+    margin-bottom: 0;
+  }
+}
+
+.telcel-controles-contenedor--textos-plan {
+  font-size: 13px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 8px;
+  @include media("<tablet") {
+    text-align: center;
+  }
+}
+
+.plan-text-espacio {
+  @include media("<tablet") {
+    margin-bottom: 8px;
+  }
+}

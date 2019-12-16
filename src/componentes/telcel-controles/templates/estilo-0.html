@@ -1,0 +1,341 @@
+
+<div class="col-xs-12">
+
+  <h2>Formulario ejemplo 1</h2>
+  <p>Boton desactivado por defecto hasta que los campos estén llenos para posteriormente disparar la validacion</p>
+
+  <form action="">
+    <div class="telcel-controles-contenedor">
+      <div class="telcel-controles-campo-de-texto telcel-controles-campo-de-texto-tooltip">
+        <div class="telcel-controles-campo-de-texto-contenido">
+          <label for="telcel-contrena">Contrasena</label>
+          <input id="telcel-contrena" maxlength="10" type="password" placeholder="ingresa tu contraseña" class="telcel-controles-campo-de-texto-input" data-form-validation='[{ "validation": "required" , "error_msg": "Este campo es requerido" }, { "validation": "minlength", "min_length":"9" , "error_msg": "Tiene que tener 9 dígitos" } , { "validation": "maxlength" , "max_length": "10" , "error_msg": "Tiene que tener 9 dígitos" }]' />
+          <a href="#" class="telcel-campo-de-texto-contrasena" data-toggle="modal" data-target="#rfcInfoModal"><img src="../componentes/telcel-controles/img/visualizar.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+  <form class="telcel-controles-formulario" id="ejemplo-telcel-controles-formulario-1">
+
+    <div class="telcel-controles-contenedor">
+      <div class="telcel-controles-campo-de-texto telcel-controles-campo-de-texto-tooltip">
+        <div class="telcel-controles-campo-de-texto-contenido">
+          <label for="cuenta-o-rfc">Cuenta o RFC</label>
+          <input id="cuenta-o-rfc" maxlength="10" type="text" class="telcel-controles-campo-de-texto-input" data-form-validation='[{ "validation": "required" , "error_msg": "Este campo es requerido" }, { "validation": "minlength", "min_length":"9" , "error_msg": "Tiene que tener 9 dígitos" } , { "validation": "maxlength" , "max_length": "10" , "error_msg": "Tiene que tener 9 dígitos" }]' />
+          <a href="#" class="telcel-campo-de-texto-tooltip" data-toggle="modal" data-target="#rfcInfoModal"><img src="../componentes/telcel-controles/img/ayuda.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="telcel-controles-contenedor">
+      <div class="telcel-controles-campo-de-texto telcel-controles-campo-de-texto-bloqueado">
+        <div class="telcel-controles-campo-de-texto-contenido">
+          <label for="tienda-formulario-titular-telefono">Teléfono</label>
+          <input id="tienda-formulario-titular-telefono" type="text" class="telcel-controles-campo-de-texto-input" value="55 2345 7854" disabled />
+           <div class="telcel-controles-campo-de-texto-bloqueado-imagen"><img src="../componentes/telcel-controles/img/candado.svg" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="telcel-controles-contenedor-select">
+      <div id="" class="telcel-controles-select-simulado " name="">
+        <div id="" class="telcel-controles-contenedor-dropdown" tabindex="1">
+          <span class="telcel-controles-titulo-select-simulado">Elige una opción de facturación</span>
+          <div class="telcel-controles-select-opciones dropdown">
+            <div class="telcel-controles-header-select"> Elige una opción de facturación</div>
+            <ul>
+              <li class="telcel-controles-opcion">
+                <a href="#" data-etiqueta="Apple" data-evento="clicMenu">Gastos en general</a>
+              </li>
+              <li class="telcel-controles-opcion">
+                <a href="#" data-etiqueta="Huawei" data-evento="clicMenu">Opción 2</a>
+              </li>
+              <li class="telcel-controles-opcion">
+                <a href="#" data-etiqueta="Nokia" data-evento="clicMenu">Opción 3</a>
+              </li>
+              <li class="telcel-controles-opcion">
+                <a href="#" data-etiqueta="Samsung" data-evento="clicMenu">Opción 4</a>
+              </li>
+              <li class="telcel-controles-opcion">
+                <a href="#" data-etiqueta="Waffle" data-evento="clicMenu">Opción 5</a>
+              </li>
+              <li class="telcel-controles-opcion">
+                <a href="#" data-etiqueta="Marca 6" data-evento="clicMenu">Opción 6</a>
+              </li>
+              <li class="telcel-controles-opcion">
+                <a href="#" data-etiqueta="Marca 7" data-evento="clicMenu">Opción 7</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="telcel-controles-contenedor">
+      <div class="telcel-controles-campo-de-texto telcel-controles-tarjeta-de-credito">
+
+        <label>* Datos de tarjeta</label>
+
+        <!-- imagen tarjeta -->
+        <span class="telcel-controles-tarjeta-de-credito--imagen">
+          <img class="telcel-controles-tarjeta-de-credito--imagen-img" src="../../componentes/telcel-controles/img/tarjeta.svg" alt="">
+        </span>
+
+        <!-- numero tarjeta -->
+        <span class="telcel-controles-tarjeta-de-credito--numero">
+          <input type="text" class="telcel-controles-campo-de-texto-input telcel-controles-tarjeta-de-credito--numero-input" maxlength="19" data-form-validation='[{ "validation": "required" , "error_msg": "Campo requerido" }, { "validation": "minlength", "min_length":"16" , "error_msg": "Tiene que tener 16 dígitos" } , { "validation": "specialcharacters" , "error_msg": "La colonia no puede contener acentos ni caracteres especiales" } , { "validation": "noaccents" , "error_msg": "La colonia no puede contener acentos ni caracteres especiales" }]' placeholder="0000 0000 0000 0000" />
+        </span>
+
+        <!-- fecha tarjeta -->
+        <span class="telcel-controles-tarjeta-de-credito--fecha telcel-controles-tarjeta-de-credito--fecha-inactivo">
+          <input type="text" class="telcel-controles-campo-de-texto-input telcel-controles-tarjeta-de-credito--fecha-input" maxlength="5" data-form-validation='[{ "validation": "required" , "error_msg": "Campo requerido" } , { "validation": "specialcharacters" , "error_msg": "La colonia no puede contener acentos ni caracteres especiales" } , { "validation": "noaccents" , "error_msg": "La colonia no puede contener acentos ni caracteres especiales" }]' placeholder="MM/AA" />
+        </span>
+
+        <!-- cvv tarjeta -->
+        <span class="telcel-controles-tarjeta-de-credito--cvv telcel-controles-tarjeta-de-credito--cvv-inactivo">
+          <input type="password" class="telcel-controles-campo-de-texto-input telcel-controles-tarjeta-de-credito--cvv-input" maxlength="4" data-form-validation='[{ "validation": "required" , "error_msg": "Campo requerido" } , { "validation": "specialcharacters" , "error_msg": "La colonia no puede contener acentos ni caracteres especiales" }, { "validation": "minlength", "min_length":"3" , "error_msg": "El CVV tiene que tener 3 dígitos" } , { "validation": "noaccents" , "error_msg": "La colonia no puede contener acentos ni caracteres especiales" }]' placeholder="CCV" />
+          <a href="#" class="telcel-campo-de-texto-tooltip" data-toggle="modal" data-target="#rfcInfoModal"><img src="../componentes/telcel-controles/img/ayuda.svg" alt=""></a>
+        </span>
+
+      </div>
+    </div>
+
+
+    <div class="telcel-controles-contenedor">
+      <a href="#" class="telcel-campo-de-texto-cta telcel-controles-boton-desactivado telcel-controles-siguiente">Continuar</a>
+    </div>
+
+  </form>
+</div>
+
+
+
+<div class="col-xs-12">
+  <h2>Formulario ejemplo 2</h2>
+  <p>Call to action embebido en el control</p>
+
+  <form class="telcel-controles-formulario" id="ejemplo-telcel-controles-formulario-2">
+    <div class="telcel-controles-contenedor">
+      <div class="telcel-controles-campo-de-texto telcel-controles-campo-de-texto-cta">
+        <div class="telcel-controles-campo-de-texto-contenido">
+          <label for="linea-telcel">Línea Telcel</label>
+          <input id="linea-telcel" type="text" placeholder="Número Telcel a 10 dígitos" class="telcel-controles-campo-de-texto-input" data-form-validation='[{ "validation": "required" , "error_msg": "Este campo es requerido" }, { "validation": "onlynumbers" , "error_msg": "Solo numeros" }]' />
+          <a class="telcel-campo-de-texto-cta" data-accion="TelcelControles.funcionEjemplo" href="#">Enviar</a>
+        </div>
+      </div>
+    </div>
+  </form>
+
+</div>
+
+<!-- Radio button -->
+<div class="col-xs-12">
+  <h2>Radio buttons en circulo</h2>
+
+  <form class="telcel-controles-formulario" id="ejemplo-telcel-controles-formulario-3">
+
+    <p>Alineacion vertical</p>
+    <div class="telcel-controles-contenedor--alineacion-vertical">
+
+      <div class="telcel-controles-contenedor">
+        <div class="tienda-formulario-titular-activo--radio-buton-contenedor">
+          <input type="radio" id="datos-entrega-direccion-preseleccionada" name="datos-entrega-direccion-nueva" class="control-input-titular-datos-entrega telcel-controles-radio" checked>
+          <label for="datos-entrega-direccion-preseleccionada">Lago 456</label>
+        </div>
+      </div>
+
+      <div class="telcel-controles-contenedor">
+        <div class="tienda-formulario-titular-activo--radio-buton-contenedor">
+          <input type="radio" id="datos-entrega-direccion-nueva" name="datos-entrega-direccion-nueva" class="telcel-controles-radio control-input-titular-datos-entrega">
+          <label  for="datos-entrega-direccion-nueva"> Agregar nueva dirección</label>
+        </div>
+      </div>
+
+    </div>
+
+    <p>Alineacion Horizontal</p>
+    <div class="telcel-controles-contenedor--alineacion-horizontal">
+
+      <div class="telcel-controles-contenedor">
+        <div class="tienda-formulario-titular-activo--radio-buton-contenedor">
+          <input type="radio" id="datos-entrega-direccion-preseleccionada--2" name="datos-entrega-direccion-nueva" class="control-input-titular-datos-entrega telcel-controles-radio" checked>
+          <label for="datos-entrega-direccion-preseleccionada--2">Lago 456</label>
+        </div>
+      </div>
+
+      <div class="telcel-controles-contenedor">
+        <div class="tienda-formulario-titular-activo--radio-buton-contenedor">
+          <input type="radio" id="datos-entrega-direccion-nueva--2" name="datos-entrega-direccion-nueva" class="telcel-controles-radio control-input-titular-datos-entrega">
+          <label  for="datos-entrega-direccion-nueva--2"> Agregar nueva dirección</label>
+        </div>
+      </div>
+
+    </div>
+
+
+  </form>
+
+</div>
+<!-- Radio button -->
+
+
+<!-- Checkbox -->
+<div class="col-xs-12">
+  <h2>Checkboxes</h2>
+  <p>Alineacion horizontal</p>
+
+  <form class="telcel-controles-formulario" id="ejemplo-telcel-controles-formulario--checkbox">
+    <div class="tienda-login--condicionales telcel-controles-contenedor--alineacion-horizontal">
+      <div class="telcel-controles-checkbox">
+        <label><input type="checkbox" value="">Si</label>
+      </div>
+      <div class="telcel-controles-checkbox">
+        <label><input type="checkbox" value="">No</label>
+      </div>
+    </div>
+
+    <p>Alineacion vertical</p>
+    <div class="tienda-login--condicionales telcel-controles-contenedor--alineacion-vertical">
+      <div class="telcel-controles-checkbox">
+        <label><input type="checkbox" value="">Si</label>
+      </div>
+      <div class="telcel-controles-checkbox">
+        <label><input type="checkbox" value="">No</label>
+      </div>
+    </div>
+
+  </form>
+
+</div>
+<!-- Checkbox -->
+
+
+
+<div class="col-xs-12">
+
+  <form action="">
+
+    <h2>Radio buttons en caja</h2>
+
+    <div class="col-xs-12">
+      <p>Alineacion horizontal</p>
+
+      <div class="telcel-controles-contenedor--alineacion-horizontal">
+
+        <div class="telcel-controles-contenedor">
+          <div class="tienda-formulario-titular-activo--radio-buton-contenedor">
+            <input type="radio" id="seleccion-meses--12-meses" name="seleccion-meses" class="control-input-titular-datos-entrega telcel-controles-radio--estilo-2" checked>
+            <label for="seleccion-meses--12-meses"> 12 meses</label>
+          </div>
+        </div>
+
+        <div class="telcel-controles-contenedor">
+          <div class="tienda-formulario-titular-activo--radio-buton-contenedor">
+            <input type="radio" id="seleccion-meses--18-meses" name="seleccion-meses" class="telcel-controles-radio--estilo-2">
+            <label  for="seleccion-meses--18-meses"> 18 meses</label>
+          </div>
+        </div>
+
+        <div class="telcel-controles-contenedor">
+          <div class="tienda-formulario-titular-activo--radio-buton-contenedor">
+            <input type="radio" id="seleccion-meses--24-meses" name="seleccion-meses" class="telcel-controles-radio--estilo-2">
+            <label  for="seleccion-meses--24-meses"> 24 meses</label>
+          </div>
+        </div>
+
+        <div class="telcel-controles-contenedor">
+          <div class="tienda-formulario-titular-activo--radio-buton-contenedor">
+            <input type="radio" id="seleccion-meses--opcion-longitud" name="seleccion-meses" class="telcel-controles-radio--estilo-2">
+            <label  for="seleccion-meses--opcion-longitud"> Opcion de gran longitud</label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="col-xs-12">
+      <p>Alineacion vertical</p>
+
+      <div class="telcel-controles-contenedor--alineacion-vertical">
+
+        <div class="telcel-controles-contenedor">
+          <div class="tienda-formulario-titular-activo--radio-buton-contenedor">
+            <input type="radio" id="seleccion-meses--12-meses-2" name="seleccion-meses-2" class="control-input-titular-datos-entrega telcel-controles-radio--estilo-2" checked>
+            <label for="seleccion-meses--12-meses-2"> 12 meses</label>
+          </div>
+        </div>
+
+        <div class="telcel-controles-contenedor">
+          <div class="tienda-formulario-titular-activo--radio-buton-contenedor">
+            <input type="radio" id="seleccion-meses--18-meses-2" name="seleccion-meses-2" class="telcel-controles-radio--estilo-2">
+            <label  for="seleccion-meses--18-meses-2"> 18 meses</label>
+          </div>
+        </div>
+
+        <div class="telcel-controles-contenedor">
+          <div class="tienda-formulario-titular-activo--radio-buton-contenedor">
+            <input type="radio" id="seleccion-meses--24-meses-2" name="seleccion-meses-2" class="telcel-controles-radio--estilo-2">
+            <label  for="seleccion-meses--24-meses-2"> 24 meses</label>
+          </div>
+        </div>
+
+        <div class="telcel-controles-contenedor">
+          <div class="tienda-formulario-titular-activo--radio-buton-contenedor">
+            <input type="radio" id="seleccion-meses--opcion-longitud-2" name="seleccion-meses-2" class="telcel-controles-radio--estilo-2">
+            <label  for="seleccion-meses--opcion-longitud-2"> Opcion de gran longitud</label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </form>
+
+</div>
+
+
+
+<div class="col-xs-12">
+
+  <form action="">
+
+    <h2>Select Especial</h2>
+
+    <div class="telcel-controles-contenedor">
+      <div class="dropdown">
+        <button class="telcel-controles--select-checkbox--boton dropdown-toggle" type="button">Todos
+        <span class="caret"></span></button>
+        <div class="dropdown-menu telcel-controles-contenedor--select-checkbox">
+
+          <div class="telcel-controles-contenedor--select-checkbox--contenedor">
+            <h3>Selecciona una opción</h3>
+            <ul>
+              <li><label><input type="checkbox" class="telcel-controles-contenedor--select-checkbox---seleccionar-todos">Todos</label></li>
+              <li><label><input type="checkbox" value="">Opción 1</label></li>
+              <li><label><input type="checkbox" value="">Opción 2</label></li>
+              <li><label><input type="checkbox" value="">Opción 3</label></li>
+              <li><label><input type="checkbox" value="">Opción 4</label></li>
+              <li><label><input type="checkbox" value="">Opción 5</label></li>
+              <li><label><input type="checkbox" value="">Opción 6</label></li>
+              <li><label><input type="checkbox" value="">Opción 7</label></li>
+              <li><label><input type="checkbox" value="">Opción 8</label></li>
+              <li><label><input type="checkbox" value="">Opción 9</label></li>
+              <li><label><input type="checkbox" value="">Opción 10</label></li>
+              <li><label><input type="checkbox" value="">Opción 11</label></li>
+            </ul>
+          </div>
+
+          <a class="telcel-controles-contenedor--select-checkbox--cta" href="#">Confirmar</a>
+
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+</div>

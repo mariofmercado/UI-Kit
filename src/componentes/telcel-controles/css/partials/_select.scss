@@ -1,0 +1,16 @@
+select.telcel-controles-select{
+  width: 100%;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  background: url("data:image/svg+xml;utf8,<svg fill='444' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-color: $blanco;
+
+  position: relative;
+  border: 1px solid #bac9d8;
+  border-radius: 5px;
+  padding: 10px;
+
+  font-size: 15px;
+}
