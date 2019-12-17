@@ -1,0 +1,76 @@
+@mixin button-variant($colorBase){
+	color: color-yiq($colorBase);
+	background: $colorBase;
+	@include transition(all .2s ease-out);
+	&:hover {
+    color: color-yiq($colorBase);
+    background: color-level($colorBase, $btn-level-hover);
+    box-shadow: 0 10px 10px -5px rgba($colorBase, 0.15), 0 10px 10px -10px rgba(0, 0, 0, 0.25), 0 0 4px 0 rgba($colorBase, 0.15);
+    @include transition(all .2s ease-out);
+  }
+  &:active {
+    &:hover,
+    &:focus{
+      background-color: color-level($colorBase, $btn-level-pressed);
+      box-shadow: $btn-focus-box-shadow;
+    }
+  }
+  &:focus{
+  	box-shadow: $btn-focus-box-shadow;
+  	&:hover{
+  		box-shadow: $btn-focus-box-shadow;
+  	}
+  }
+  &:disabled{
+		background: #D0D0D0;
+		color: #595959;
+		cursor: initial;
+		box-shadow: none;
+		&:hover{
+			background: #D0D0D0;
+			color: #595959;
+			cursor: initial;
+			box-shadow: none;
+		}
+	}
+}
+
+@mixin button-outline-variant($colorBase){
+	color: color-yiq($colorBase,$yiq-text-dark,$colorBase);
+	//border-color: color-level($colorBase, $btn-outline-level-hover);
+	border-color: $colorBase;
+	background: $white;
+	@include transition(all .2s ease-out);
+	&:hover{
+		background: color-level($colorBase, $btn-outline-level-hover);
+		box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.25), 0 0 4px 0 rgba(0, 0, 0, 0.15);
+		@include transition(all .2s ease-out);
+	}
+	&:active {
+    &:hover,
+    &:focus{
+      background-color: color-level($colorBase, $btn-outline-level-pressed);
+      box-shadow: $btn-focus-box-shadow;
+    }
+  }
+  &:focus{
+  	box-shadow: $btn-focus-box-shadow;
+  	&:hover{
+  		box-shadow: $btn-focus-box-shadow;
+  	}
+  }
+  &:disabled{
+		background: #F8F8F8;
+		border-color: #D0D0D0;
+		color: #595959;
+		cursor: initial;
+		box-shadow: none;
+		&:hover{
+			background: #F8F8F8;
+			border-color: #D0D0D0;
+			color: #595959;
+			cursor: initial;
+			box-shadow: none;
+		}
+	}
+}

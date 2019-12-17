@@ -1,12 +1,111 @@
 extends ../../../layouts/doc.pug
 block vars
 	- page = 'Botones';
-	- pageDesc = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum a, voluptate, cumque fuga in cupiditate facere.';
+	- pageDesc = 'Los botones personalizados están pensados para su uso en acciones dentro de formularios, cuadros de diálogo y más.';
 	- assets = '../../../../assets/';
 	- idMainSection = 'componentes';
 	- idSection = 'botones';
 block content
-	h2 Lorem ipsum dolor
-	p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam corporis iure explicabo doloribus, debitis! Quis tempora nihil dolore voluptatum adipisci velit ex doloremque? Facere illum debitis, distinctio ullam, quaerat atque.
+	h2 Introducción
+	p El código qué genera los estilos para botones se encuentra en los archivos #[span.DOC-codeInline _variables.scss], #[span.DOC-codeInline _buttons.scss] y #[span.DOC-codeInline mixins/_buttons.scss].
+	p En #[span.DOC-codeInline _variables.scss] tenemos la configuración básica (apartado botones), también se determinan los colores disponibles mediante la variable #[span.DOC-codeInline $theme-colors-buttons], si requiere agregar o quitar colores modifique esta variable. En #[span.DOC-codeInline _buttons.scss] se encuentra la base y los modificadores. En #[span.DOC-codeInline mixins/_buttons.scss] encuentran los generadores de variantes, #[span.DOC-codeInline button-variant] para aspecto sólido y #[span.DOC-codeInline button-outline-variant] para aspecto outline. 
+	h2 Uso básico
+	p La clase base para personalizar los botones es #[span.DOC-codeInline .TM-btn], esta se complementa con distintos modificadores, como lo es el color.
+	+example('button')
+		button.TM-btn.TM-btn--primary Primary
+		button.TM-btn.TM-btn--info Info
+		button.TM-btn.TM-btn--success Success
+		button.TM-btn.TM-btn--danger Danger
+		button.TM-btn.TM-btn--warning Warning
+	h3 Modificador outline
+	p Con la clase base y un modificador de color vamos a obtener un botón con color solido, podemos utilizar botones con aspecto outline mediante el modificador #[span.DOC-codeInline TM-btn--outline].
+	+example('button')
+		button.TM-btn.TM-btn--outline.TM-btn--primary Primary
+		button.TM-btn.TM-btn--outline.TM-btn--info Info
+		button.TM-btn.TM-btn--outline.TM-btn--success Success
+		button.TM-btn.TM-btn--outline.TM-btn--danger Danger
+		button.TM-btn.TM-btn--outline.TM-btn--warning Warning
+	h3 Modificador block
+	p El ancho de los botones se determina por el contenido y las medidas internas (padding), es posible utilizar botones como un bloque (ancho del 100%) mediante el modificador #[span.DOC-codeInline TM-btn--block].
+	+example('button')
+		button.TM-btn.TM-btn--primary.TM-btn--block Primary
+		button.TM-btn.TM-btn--info.TM-btn--block Info
+		button.TM-btn.TM-btn--success.TM-btn--block Success
+		button.TM-btn.TM-btn--danger.TM-btn--block Danger
+		button.TM-btn.TM-btn--warning.TM-btn--block Warning
+	h2 Uso en otros elementos
+	p La clase #[span.DOC-codeInline .TM-btn] y sus modificadores están diseñados para ser utilizadas con el elemento #[span.DOC-codeInline &lt;button&gt;]; sin embargo también puede ser utilizada en elementos  #[span.DOC-codeInline &lt;input&gt;] y  #[span.DOC-codeInline &lt;a&gt;].
 	+example()
-		button consectetur
+		input.TM-btn.TM-btn--primary(type="submit" value="Primary")
+		input.TM-btn.TM-btn--outline.TM-btn--info(type="submit" value="Info")
+	p Los elementos #[span.DOC-codeInline &lt;a&gt;] solo tienen cómo limitante el uso de las pseudo-clases exclusivas de los botones.
+	+example('a')
+		a.TM-btn.TM-btn--primary Primary
+	h2 Estado disabled
+	p Depende de la pseudo-clase #[span.DOC-codeInline :disabled] por lo que solo puede aplicarse a elementos  #[span.DOC-codeInline &lt;input&gt;] y #[span.DOC-codeInline &lt;button&gt;].
+	+example('button')
+		button.TM-btn.TM-btn--primary(disabled) Primary
+		input.TM-btn.TM-btn--info(type="submit" value="Info" disabled)
+		button.TM-btn.TM-btn--outline.TM-btn--success(disabled) Success
+		input.TM-btn.TM-btn--outline.TM-btn--danger(type="submit" value="Danger" disabled)
+	// Solo para demostración de generación de colores
+	br
+	br
+	br
+	h4 Tabla comparativa de colores propuestos y colores generados
+	br
+	table
+		thead
+			tr
+				th(style="font-weight: 600; font-size: 14px;") Color base
+				th(style="font-weight: 600; font-size: 14px;") Hover original
+				th(style="font-weight: 600; font-size: 14px;") Hover Calculado
+				th(style="font-weight: 600; font-size: 14px;") Pressed original
+				th(style="font-weight: 600; font-size: 14px;") Pressed calculado
+				th(style="font-weight: 600; font-size: 14px;") Outline hover original
+				th(style="font-weight: 600; font-size: 14px;") Outline hover calculado
+				th(style="font-weight: 600; font-size: 14px;") Outline pressed original
+				th(style="font-weight: 600; font-size: 14px;") Outline pressed calculado
+		tbody
+			tr
+				td(style="background: #7b1fa2; text-align: center; padding: 15px 3px;") #7b1fa2
+				td(style="background: #8835AB; text-align: center; padding: 15px 3px;") #8835AB
+				td(style="background: #8835ab; text-align: center; padding: 15px 3px;") #8835ab
+				td(style="background: #954BB4; text-align: center; padding: 15px 3px;") #954BB4
+				td(style="background: #954cb5; text-align: center; padding: 15px 3px;") #954cb5
+				td(style="background: #EBDEF1; text-align: center; padding: 15px 3px;") #EBDEF1
+				td(style="background: #ebddf1; text-align: center; padding: 15px 3px;") #ebddf1
+				td(style="background: #F1E8F5; text-align: center; padding: 15px 3px;") #F1E8F5
+				td(style="background: #f2e9f6; text-align: center; padding: 15px 3px;") #f2e9f6
+			tr
+				td(style="background: #00529B; text-align: center; padding: 15px 3px;") #00529B
+				td(style="background: #1A63A5; text-align: center; padding: 15px 3px;") #1A63A5
+				td(style="background: #1a63a5; text-align: center; padding: 15px 3px;") #1a63a5
+				td(style="background: #3374af; text-align: center; padding: 15px 3px;") #3374af
+				td(style="background: #3375af; text-align: center; padding: 15px 3px;") #3375af
+				td(style="background: #D9E5F0; text-align: center; padding: 15px 3px;") #D9E5F0
+				td(style="background: #d9e5f0; text-align: center; padding: 15px 3px;") #d9e5f0
+				td(style="background: #e5edf5; text-align: center; padding: 15px 3px;") #e5edf5
+				td(style="background: #e6eef5; text-align: center; padding: 15px 3px;") #e6eef5
+			tr
+				td(style="background: #008000; text-align: center; padding: 15px 3px;") #008000
+				td(style="background: #1A8C1A; text-align: center; padding: 15px 3px;") #1A8C1A
+				td(style="background: #1a8d1a; text-align: center; padding: 15px 3px;") #1a8d1a
+				td(style="background: #339933; text-align: center; padding: 15px 3px;") #339933
+				td(style="background: #339933; text-align: center; padding: 15px 3px;") #339933
+				td(style="background: #D9ECD9; text-align: center; padding: 15px 3px;") #D9ECD9
+				td(style="background: #d9ecd9; text-align: center; padding: 15px 3px;") #d9ecd9
+				td(style="background: #e8f3e8; text-align: center; padding: 15px 3px;") #e8f3e8
+				td(style="background: #e6f2e6; text-align: center; padding: 15px 3px;") #e6f2e6
+			tr
+				td(style="background: #d32222; text-align: center; padding: 15px 3px;") #d32222
+				td(style="background: #d73838; text-align: center; padding: 15px 3px;") #d73838
+				td(style="background: #d73838; text-align: center; padding: 15px 3px;") #d73838
+				td(style="background: #db4e4e; text-align: center; padding: 15px 3px;") #db4e4e
+				td(style="background: #dc4e4e; text-align: center; padding: 15px 3px;") #dc4e4e
+				td(style="background: #f9dede; text-align: center; padding: 15px 3px;") #f9dede
+				td(style="background: #f8dede; text-align: center; padding: 15px 3px;") #f8dede
+				td(style="background: #fae8e8; text-align: center; padding: 15px 3px;") #fae8e8
+				td(style="background: #fbe9e9; text-align: center; padding: 15px 3px;") #fbe9e9
+
+

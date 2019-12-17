@@ -14,7 +14,7 @@ html(lang="es")
 		.DOC-content
 			#DOC-container.DOC-container
 				h1.DOC-page__title #{page}
-				p.DOC-page__desc #{pageDesc}
+				p.DOC-page__desc !{pageDesc}
 				block content
 		if pageToc
 			#DOC-toc.DOC-toc

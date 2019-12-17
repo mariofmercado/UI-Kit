@@ -78,6 +78,10 @@
 		}
 	}
 }
+.DOC-codeInline{
+	color: #e83e8c;
+	font-weight: 600;
+}
 .DOC-example{
 	border: 1px solid #e1e1e8;
 	margin: 15px 0;
@@ -87,6 +91,11 @@
 	}
 	&__preview,&__code{
 		padding: 10px;
+	}
+	&__preview{
+		button{
+			margin: 2px 0;
+		}
 	}
 	&__code{
 		background: #f1f1f1;

@@ -5,6 +5,40 @@
 $white:                      #fff !default;
 $black:                      #000 !default;
 
+//-- **** Nota: Implementar nombre de variables definido por UX ****
+
+//-- Variables del tema
+
+$primary:  #7B1FA2;
+$success:  #008000;
+$warning:  #EBAB07;
+$danger:   #D32222;
+$info:     #00529B;
+
+//-- Variantes del tema aplicado a todos los componentes
+
+$theme-colors-buttons: () !default;
+$theme-colors-buttons: map-merge(
+  (
+    "primary":    $primary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+  ),
+  $theme-colors-buttons
+);
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval:      10% !default;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:  150 !default;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark:             #222222 !default;
+$yiq-text-light:            $white !default;
+
 //======================================
 //-- Body
 //======================================
@@ -17,7 +51,9 @@ $body-color:                 $black !default;
 //======================================
 
 $border-width:                1px !default;
-$spacer:                      1rem;
+$spacing-relative:            1rem;
+$spacing-absolute:            8px;
+$border-radius:               4px;
 
 //======================================
 //-- Tipografía
@@ -34,8 +70,8 @@ $font-secondary-weight-3:     700 !default;
 
 $font-size-base:              1rem !default; //- Tamaño de navegador en 16px
 $font-size-base-mobile:       $font-size-base * .875 !default; //- Con tamaño de navegador en 16px - equivale a 14px
-$font-size-small:                $font-size-base * .875 !default; //- Con tamaño de navegador en 16px - equivale a 14px
-$font-size-extra-small:               $font-size-base * .8125 !default; //- Con tamaño de navegador en 16px - equivale a 13px
+$font-size-small:             $font-size-base * .875 !default; //- Con tamaño de navegador en 16px - equivale a 14px
+$font-size-extra-small:       $font-size-base * .8125 !default; //- Con tamaño de navegador en 16px - equivale a 13px
 
 $line-height-base:            1.5 !default;
 
@@ -52,7 +88,7 @@ $h5-font-size-mobile:         $font-size-base !default;
 $h6-font-size:                $font-size-base * 1.125  !default; //- Con tamaño de navegador en 16px - equivale a 18px;
 $h6-font-size-mobile:         $font-size-base !default;
 
-$headings-margin-bottom:      $spacer / 2 !default;
+$headings-margin-bottom:      $spacing-relative / 2 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        400 !default;
@@ -63,7 +99,24 @@ $hr-color:                    inherit !default;
 $hr-height:                   $border-width !default;
 $hr-opacity:                  .25 !default;
 
-$hr-margin-y:                 $spacer !default;
+$hr-margin-y:                 $spacing-relative !default;
+
+//======================================
+//-- Botones
+//======================================
+
+$btn-font-family:                $font-family-base;
+$btn-font-size:                  $font-size-base;
+$btn-font-weight:                $font-base-weight-2;
+$btn-line-height:                $line-height-base;
+$btn-border-width:               $border-width;
+$btn-border-radius:              $border-radius;
+$btn-focus-box-shadow:           0 0 6px 0 rgba(2, 176, 239, 0.9);
+$btn-padding:                    7px 24px;
+$btn-level-hover:                -1;
+$btn-level-pressed:              -2;
+$btn-outline-level-hover:        -8.5;
+$btn-outline-level-pressed:      -9;
 
 //======================================
 //-- Forms

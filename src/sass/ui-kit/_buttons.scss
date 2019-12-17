@@ -1,0 +1,57 @@
+.TM-btn {
+  display: inline-block;
+  font-family: $btn-font-family;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  line-height: $btn-line-height;
+  color: $body-color;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: $btn-border-width solid transparent;
+  border-radius: $btn-border-radius;
+  padding: $btn-padding;
+  @include button-variant(#7e7e7e);
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus{
+    outline: 0;
+    box-shadow: $btn-focus-box-shadow;
+  }
+
+  &:active {
+    &:hover,
+    &:focus{
+      box-shadow: none;
+    }
+  }
+
+  &--block{
+  	display: block;
+  	width: 100%;
+  	+ .TM-btn--block {
+	    margin-top: $spacing-absolute;
+	  }
+  }
+  &.TM-btn--outline{
+		@include button-outline-variant(#7e7e7e);
+  }
+
+}
+
+@each $color, $value in $theme-colors-buttons {
+  .TM-btn--#{$color} {
+   @include button-variant($value);
+  }
+}
+
+@each $color, $value in $theme-colors-buttons {
+  .TM-btn--outline.TM-btn--#{$color} {
+    @include button-outline-variant($value);
+  }
+}

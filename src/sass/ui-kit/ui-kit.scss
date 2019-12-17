@@ -1,5 +1,13 @@
 @import "variables";
+@import "functions";
 
-
+// Generales
 @import "utilities";
 @import "reboot";
+
+// mixins
+@import "mixins/commons";
+@import "mixins/buttons";
+
+// Componentes
+@import "buttons";
