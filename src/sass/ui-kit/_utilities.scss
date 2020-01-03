@@ -9,3 +9,21 @@
 .TM-font--extra-small{
 	font-size: $font-size-extra-small;
 }
+
+//- Espacios
+@each $key, $value in $spacers{
+	.TM-m-#{$key}{margin: $value;}
+	.TM-mt-#{$key}{margin-top: $value;}
+	.TM-mb-#{$key}{margin-bottom: $value;}
+	.TM-ml-#{$key}{margin-left: $value;}
+	.TM-mr-#{$key}{margin-right: $value;}
+	.TM-mx-#{$key}{margin: 0 $value;}
+	.TM-my-#{$key}{margin: $value 0;}
+	.TM-p-#{$key}{padding: $value;}
+	.TM-pt-#{$key}{padding-top: $value;}
+	.TM-pb-#{$key}{padding-bottom: $value;}
+	.TM-pl-#{$key}{padding-left: $value;}
+	.TM-pr-#{$key}{padding-right: $value;}
+	.TM-px-#{$key}{padding: 0 $value;}
+	.TM-py-#{$key}{padding: $value 0;}
+}

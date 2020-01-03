@@ -43,6 +43,9 @@
 	box-sizing: border-box;
 	padding: 30px;
 }
+.DOC-nowrap{
+	white-space: nowrap;
+}
 .DOC-nav{
 	list-style: none;
 	padding: 0;
@@ -116,4 +119,58 @@
 .DOC-page__desc{
 	font-size: 1.2rem;
 	margin-bottom: 40px;
+}
+.DOC-tableColor{
+	width: 100%;
+	border-collapse:collapse;
+	border-spacing:0;
+	margin-bottom: 16px;
+	th{
+		text-align: left;
+		padding: 5px;
+	}
+	td{
+		padding: 5px;
+		border-top: solid 1px #e1e1e8;
+	}
+	tr{
+		td:nth-child(1),td:nth-child(2){
+			width: 80px;
+		}
+	}
+}
+
+.DOC-table{
+	width: 100%;
+	border-collapse:collapse;
+	border-spacing:0;
+	margin-bottom: 16px;
+	th{
+		text-align: left;
+		padding: 10px 5px;
+	}
+	td{
+		padding: 5px;
+		border-top: solid 1px #e1e1e8;
+	}
+}
+.DOC-table--align-top{
+	td{
+		vertical-align: top;
+		ul{
+			margin: 0;
+		}
+	}
+}
+
+.DOC-exampleColor{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+}
+
+.DOC-exampleTextColor{
+	font-size: 42px;
+	font-weight: bold;
+	line-height: 1;
 }

@@ -39,7 +39,7 @@
 	color: color-yiq($colorBase,$yiq-text-dark,$colorBase);
 	//border-color: color-level($colorBase, $btn-outline-level-hover);
 	border-color: $colorBase;
-	background: $white;
+	background: $color-white;
 	@include transition(all .2s ease-out);
 	&:hover{
 		background: color-level($colorBase, $btn-outline-level-hover);

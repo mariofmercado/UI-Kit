@@ -2,62 +2,106 @@
 //-- Colores
 //======================================
 
-$white:                      #fff !default;
-$black:                      #000 !default;
+$color-white:                      #ffffff !default;
+$color-black:                      #000000 !default;
 
-//-- **** Nota: Implementar nombre de variables definido por UX ****
+//-- Colores principales
 
-//-- Variables del tema
+$color-main-1:   #0A3D7E !default;
+$color-main-2:   #0f2f85 !default;
+$color-main-3:   #c71585 !default;
+$color-main-4:   #e5edf5 !default;
 
-$primary:  #7B1FA2;
-$success:  #008000;
-$warning:  #EBAB07;
-$danger:   #D32222;
-$info:     #00529B;
+//-- Colores de interación
 
-//-- Variantes del tema aplicado a todos los componentes
+$color-primary:               #7B1FA2 !default;
+$color-primary-lighter:       #7B1FA2 !default;
+$color-success:               #008000 !default;
+$color-success-lighter:       #eff7ef !default;
+$color-warning:               #EBAB07 !default;
+$color-warning-lighter:       #faf4e4 !default;
+$color-danger:                #D32222 !default;
+$color-danger-lighter:        #fdf2f2 !default;
+$color-info:                  #00529B !default;
+$color-info-lighter:          #f2f7f9 !default;
+$color-link:                  #0071D1 !default;
+$color-link-lighter:          #0071D1 !default;
 
-$theme-colors-buttons: () !default;
-$theme-colors-buttons: map-merge(
-  (
-    "primary":    $primary,
-    "success":    $success,
-    "info":       $info,
-    "warning":    $warning,
-    "danger":     $danger,
-  ),
-  $theme-colors-buttons
-);
+//-- Colores auxiliares
 
-// Set a specific jump point for requesting color jumps
+$color-auxiliary-1:           #DD2C00 !default;
+$color-auxiliary-1-lighter:   #faeee0 !default;
+$color-auxiliary-2:           #7E57C2 !default;
+$color-auxiliary-2-lighter:   #ece8f2 !default;
+$color-auxiliary-3:           #C51162 !default;
+$color-auxiliary-3-lighter:   #f6e4ec !default;
+$color-auxiliary-4:           #4169E1 !default;
+$color-auxiliary-4-lighter:   #e8ecf8 !default;
+$color-auxiliary-5:           #00838F !default;
+$color-auxiliary-5-lighter:   #e2eff0 !default;
+
+//-- Grises
+
+$gray-shade-base:       #222222 !default;
+$gray-shade-darker:     #595959 !default;
+$gray-shade-dark:       #757575 !default;
+$gray-shade:            #D0D0D0 !default;
+$gray-shade-light:      #E3E3E3 !default;
+$gray-shade-lighter:    #F8F8F8 !default;
+
+//======================================
+//-- Utilidades generales de color
+//======================================
+
 $theme-color-interval:      10% !default;
 
-// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 $yiq-contrasted-threshold:  150 !default;
-
-// Customize the light and dark text colors for use in our YIQ color contrast function.
-$yiq-text-dark:             #222222 !default;
-$yiq-text-light:            $white !default;
+$yiq-text-dark:             $gray-shade-base !default;
+$yiq-text-light:            $color-white !default;
 
 //======================================
 //-- Body
 //======================================
 
-$body-bg:                    $white !default;
-$body-color:                 $black !default;
+$body-bg:                    $color-white !default;
+$body-color:                 $gray-shade-base !default;
 
 //======================================
 //-- Generales
 //======================================
 
 $border-width:                1px !default;
+$border-radius:               4px;
+
+//======================================
+//-- Utilidades
+//======================================
+
+//- Espacios
+
+$enable-spacing-relative:     true !default;
 $spacing-relative:            1rem;
 $spacing-absolute:            8px;
-$border-radius:               4px;
+
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    "1": if($enable-spacing-relative, .5rem , 8px),
+    "2": if($enable-spacing-relative, 1rem , 16px),
+    "3": if($enable-spacing-relative, 1.5rem , 24px),
+    "4": if($enable-spacing-relative, 2rem , 32px),
+    "5": if($enable-spacing-relative, 4rem , 64px),
+    "6": if($enable-spacing-relative, 5rem , 80px),
+  ),
+  $spacers
+);
 
 //======================================
 //-- Tipografía
 //======================================
+
+$color-text        : $gray-shade-base;
+$color-text-light  : $color-white;
 
 $font-family-base:            "Source Sans Pro", sans-serif, Roboto, "Helvetica Neue", Arial !default;
 $font-base-weight-1:          400 !default;
@@ -104,6 +148,19 @@ $hr-margin-y:                 $spacing-relative !default;
 //======================================
 //-- Botones
 //======================================
+
+
+$theme-colors-buttons: () !default;
+$theme-colors-buttons: map-merge(
+  (
+    "primary":    $color-primary,
+    "success":    $color-success,
+    "info":       $color-info,
+    "warning":    $color-warning,
+    "danger":     $color-danger,
+  ),
+  $theme-colors-buttons
+);
 
 $btn-font-family:                $font-family-base;
 $btn-font-size:                  $font-size-base;

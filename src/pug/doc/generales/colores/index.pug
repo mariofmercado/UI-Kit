@@ -1,0 +1,230 @@
+extends ../../../layouts/doc.pug
+block vars
+	- page = 'Colores';
+	- pageDesc = 'En esta sección encontrarás los colores disponibles en el proyecto, así como utilidades para el manejo del mismo.';
+	- assets = '../../../../assets/';
+	- idMainSection = 'generales';
+	- idSection = 'colores';
+block content
+
+	h2 Colores principales
+	p De uso géneral el sitio.
+	table.DOC-tableColor
+		thead
+			tr
+				th
+				th
+				th Variable
+				th Hex
+		tbody
+			tr
+				td: .DOC-exampleColor(style="background: #0A3D7E;")
+				td: .DOC-exampleTextColor(style="color: #0A3D7E;") Aa
+				td $color-main-1
+				td #0A3D7E
+			tr
+				td: .DOC-exampleColor(style="background: #0f2f85;")
+				td: .DOC-exampleTextColor(style="color: #0f2f85;") Aa
+				td $color-main-2
+				td #0f2f85
+			tr
+				td: .DOC-exampleColor(style="background: #c71585;")
+				td: .DOC-exampleTextColor(style="color: #c71585;") Aa
+				td $color-main-3
+				td #c71585
+			tr
+				td: .DOC-exampleColor(style="background: #e5edf5;")
+				td: .DOC-exampleTextColor(style="color: #e5edf5;") Aa
+				td $color-main-4
+				td #e5edf5
+
+	h2 Colores de interacción
+	p Se aplican principalmente a botones, enlaces, alertas, inputs y cuadros de dialogo.
+
+	table.DOC-tableColor
+		thead
+			tr
+				th
+				th
+				th Variable
+				th Hex
+		tbody
+			tr
+				td: .DOC-exampleColor(style="background: #7b1fa2")
+				td: span.DOC-exampleTextColor(style="color: #7b1fa2") Aa
+				td $color-primary
+				td #7b1fa2
+
+			tr
+				td: .DOC-exampleColor(style="background: #008000")
+				td: span.DOC-exampleTextColor(style="color: #008000") Aa
+				td $color-success
+				td #008000
+			tr
+				td: .DOC-exampleColor(style="background: #eff7ef")
+				td: span.DOC-exampleTextColor(style="color: #eff7ef") Aa
+				td $color-success
+				td #eff7ef
+			tr
+				td: .DOC-exampleColor(style="background: #ebab07")
+				td: span.DOC-exampleTextColor(style="color: #ebab07") Aa
+				td $color-warning
+				td #ebab07
+			tr
+				td: .DOC-exampleColor(style="background: #faf4e4")
+				td: span.DOC-exampleTextColor(style="color: #faf4e4") Aa
+				td $color-warning
+				td #faf4e4
+			tr
+				td: .DOC-exampleColor(style="background: #d32222")
+				td: span.DOC-exampleTextColor(style="color: #d32222") Aa
+				td $color-danger
+				td #d32222
+			tr
+				td: .DOC-exampleColor(style="background: #fdf2f2")
+				td: span.DOC-exampleTextColor(style="color: #fdf2f2") Aa
+				td $color-danger
+				td #fdf2f2
+			tr
+				td: .DOC-exampleColor(style="background: #00529b")
+				td: span.DOC-exampleTextColor(style="color: #00529b") Aa
+				td $color-info
+				td #00529b
+			tr
+				td: .DOC-exampleColor(style="background: #f2f7f9")
+				td: span.DOC-exampleTextColor(style="color: #f2f7f9") Aa
+				td $color-info
+				td #f2f7f9
+			tr
+				td: .DOC-exampleColor(style="background: #0071d1")
+				td: span.DOC-exampleTextColor(style="color: #0071d1") Aa
+				td $color-link
+				td #0071d1
+
+	h2 Colores auxiliares
+	p Se aplican a cualquier elemento, según lo requiera el diseño.
+	table.DOC-tableColor
+		thead
+			tr
+				th
+				th
+				th Variable
+				th Hex
+		tbody
+			tr
+				td: .DOC-exampleColor(style="background: #dd2c00;")
+				td: span.DOC-exampleTextColor(style="color: #dd2c00;") Aa
+				td $color-auxiliary-1
+				td #dd2c00
+			tr
+				td: .DOC-exampleColor(style="background: #faeee0;")
+				td: span.DOC-exampleTextColor(style="color: #faeee0;") Aa
+				td $color-auxiliary-1-lighter
+				td #faeee0
+			tr
+				td: .DOC-exampleColor(style="background: #7e57c2;")
+				td: span.DOC-exampleTextColor(style="color: #7e57c2;") Aa
+				td $color-auxiliary-2
+				td #7e57c2
+			tr
+				td: .DOC-exampleColor(style="background: #ece8f2;")
+				td: span.DOC-exampleTextColor(style="color: #ece8f2;") Aa
+				td $color-auxiliary-2-lighter
+				td #ece8f2
+			tr
+				td: .DOC-exampleColor(style="background: #c51162;")
+				td: span.DOC-exampleTextColor(style="color: #c51162;") Aa
+				td $color-auxiliary-3
+				td #c51162
+			tr
+				td: .DOC-exampleColor(style="background: #f6e4ec;")
+				td: span.DOC-exampleTextColor(style="color: #f6e4ec;") Aa
+				td $color-auxiliary-3-lighter
+				td #f6e4ec
+			tr
+				td: .DOC-exampleColor(style="background: #4169e1;")
+				td: span.DOC-exampleTextColor(style="color: #4169e1;") Aa
+				td $color-auxiliary-4
+				td #4169e1
+			tr
+				td: .DOC-exampleColor(style="background: #e8ecf8;")
+				td: span.DOC-exampleTextColor(style="color: #e8ecf8;") Aa
+				td $color-auxiliary-4-lighter
+				td #e8ecf8
+			tr
+				td: .DOC-exampleColor(style="background: #00838f;")
+				td: span.DOC-exampleTextColor(style="color: #00838f;") Aa
+				td $color-auxiliary-5
+				td #00838f
+			tr
+				td: .DOC-exampleColor(style="background: #e2eff0;")
+				td: span.DOC-exampleTextColor(style="color: #e2eff0;") Aa
+				td $color-auxiliary-5-lighter
+				td #e2eff0
+
+	h2 Escala de grises
+	p Se aplican principalmente a textos, elementos con estado disabled y fondos.
+	table.DOC-tableColor
+		thead
+			tr
+				th
+				th
+				th Variable
+				th Hex
+		tbody
+			tr
+				td: .DOC-exampleColor(style="background: #222222")
+				td: span.DOC-exampleTextColor(style="color: #222222") Aa
+				td $gray-shade-base
+				td #222222
+			tr
+				td: .DOC-exampleColor(style="background: #595959")
+				td: span.DOC-exampleTextColor(style="color: #595959") Aa
+				td $gray-shade-darker
+				td #595959
+			tr
+				td: .DOC-exampleColor(style="background: #757575")
+				td: span.DOC-exampleTextColor(style="color: #757575") Aa
+				td $gray-shade-dark
+				td #757575
+			tr
+				td: .DOC-exampleColor(style="background: #d0d0d0")
+				td: span.DOC-exampleTextColor(style="color: #d0d0d0") Aa
+				td $gray-shade
+				td #d0d0d0
+			tr
+				td: .DOC-exampleColor(style="background: #e3e3e3")
+				td: span.DOC-exampleTextColor(style="color: #e3e3e3") Aa
+				td $gray-shade-light
+				td #e3e3e3
+			tr
+				td: .DOC-exampleColor(style="background: #f8f8f8")
+				td: span.DOC-exampleTextColor(style="color: #f8f8f8") Aa
+				td $gray-shade-lighter
+				td #f8f8f8
+	h2 Utilidades
+	p Están pensadas en facilitar el manejo del color y se encuentran disponibles en funciones SASS.
+	table.DOC-table.DOC-table--align-top
+		thead
+			tr
+				th Función
+				th Descripción
+				th Parametros
+		tbody
+			tr
+				td.DOC-nowrap color-level
+				td Permite realizar mezclas de negro o blanco con un color base
+				td
+					ul
+						li #[b $color] - El color base con el cual se va a realizar la mezcla.
+						li #[b $level] - El porcentaje de blanco o negro que se agregará al color base, en caso de ser negativo la mezcla se realizará con blanco y si es positivo con negro, los intervalos se relacionan con la variable #[span.DOC-codeInline $theme-color-interval] (actualemte en 10%) por lo que los valores posibles van de -10 a 10.
+			tr
+				td.DOC-nowrap color-yiq
+				td En base a un color retorna un valor claro o uno oscuro
+				td
+					ul
+						li #[b $color] - Color con el cual se va a realizar la comparación, este se convierte a escala de grises y se compara con la variable #[span.DOC-codeInline $yiq-contrasted-threshold] (actualmente en 150).
+						li #[b $dark] - Valor de retorno de la función en caso de que #[b $color] sea claro.
+						li #[b $light] - Valor de retorno de la función en caso de que #[b $color] sea oscuro.
+
+			
